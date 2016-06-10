@@ -1,0 +1,10 @@
+pelican
+markdown
+tablib
+pelican-alias
+webassets
+requests
+unicodecsv
+natsort
+git+https://github.com/r0wb0t/markdown-urlize.git
+ghp-import

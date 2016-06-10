@@ -1,0 +1,106 @@
+{
+  "name": "risks",
+  "title": "Cybergreen Risks",
+  "descriptions": "Most important risks that threats devices from all around the world",
+  "licenses" : [
+    {
+      "type": "odc-pddl",
+      "url": "http://opendatacommons.org/licenses/pddl/"
+    }
+  ],
+  "keywords": [ "Risks", "Cybergreen", "OpenNTP ", "OpenDNS", "Spam", "OpenSSDP"],
+  "version": "0.1.0",
+  "last_updated": "2016-04-17",
+  "sources": [
+    {
+      "name": "Economist",
+      "web": "http://www.economist.com/content/big-mac-index"
+    }
+  ],
+  "resources": [
+    { 
+      "path": "content/data/risks.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "title",
+            "type": "string",
+          },
+          {
+            "name": "total",
+            "type": "number"
+          },
+          {
+            "name": "max",
+            "type": "number"
+          },
+          {
+            "name": "min",
+            "type": "number"
+          },
+          {
+            "name": "mean",
+            "type": "number"
+          },
+          {
+            "name": "score",
+            "type": "number"
+          },
+          {
+            "name": "rank",
+            "type": "number"
+          },
+          {
+            "name": "places_count",
+            "type": "number"
+          },
+          {
+            "name": "icon",
+            "type": "string"
+          },
+          {
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "rank_2014",
+            "type": "number"
+          },
+          {
+            "name": "score_2014",
+            "type": "number"
+          },
+          {
+            "name": "rank_2013",
+            "type": "number"
+          },
+          {
+            "name": "score_2013",
+            "type": "number"
+          }
+        ]
+      }
+    }
+  ],
+  "views": [
+    {
+      "id": "Graph",
+      "type": "Graph",
+      "state": {
+        "graphType": "lines",
+        "group": "title",
+        "series": [
+          "score"
+        ]
+      }
+    }
+  ]
+}
