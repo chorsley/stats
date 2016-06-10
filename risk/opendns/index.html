@@ -1,0 +1,4441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CyberGreen">
+    <meta name="description" content="
+">
+    <meta name="keywords" content="
+">
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="CyberGreen Statistics - CyberGreen"/>
+    <meta property="og:site_name" content="CyberGreen Statistics"/>
+    <meta property="og:description"
+          content=""/>
+    <meta property="og:image" content="/static/images/favicon.ico"/>
+    <title>OpenDNS | Global CyberGreen Statistics by CyberGreen</title>
+    <!--[if lt IE 9]>
+    <script src="/static/vendor/html5shiv.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/static/css/site.css">
+    <link rel="icon" href="/static/images/favicon.ico">
+    <script>
+        var siteUrl = '';
+    </script>
+</head>
+<body class="risk">
+
+<header id="header">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="logo">
+                        <a href="/">
+                          <img src="/static/images/cybergreen-logo-beta.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav" >
+                        <li>
+                            <a href="/place/" title="See countries' performance">
+                                 Countries
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/risk/" title="View information for a given risk">
+                                Risks
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/download/" title="Download the data">
+                                Download
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/about/" title="About the scores">
+                                About the scores
+                            </a>
+                        </li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+  <li><a href="/risk/">Risks</a></li>
+  <li class="active">Open DNS</li>
+                </ol>
+
+<section id="data-header">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>
+                <a href="/risk/opendns/">Open DNS</a>                &ndash;
+                <span class="risk-openness" data-score="49">49 (avg score)</span>
+            </h1>
+            <div class="row navigate">
+              <div class="col-md-12">
+                <section class="risk-about">
+                  <p>The Domain Name System (DNS) is pervasive. Collectively, we use it billions of times a day, often without even knowing that it exists. For enterprises, it's their digital identity as well as a critical component of their security architecture. In short: DNS is pervasive and there are many DNS servers on the Internet. Since DNS runs on the <a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol">UDP</a> protocol, it can be used for <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack#Reflected_.2F_spoofed_attack">amplification attacks</a>. </p>
+<p><strong>Impact of running open recursive DNS servers</strong></p>
+<p>DNS can have an amplification factor of up to 179. In other words: 1 Byte turns into 179 Bytes in DDOS traffic. If only 1000 vulnerable DNS servers in, each with a mere 10 mbit/sec connection participates in a DNS amplification DDOS attack, then the resulting DDOS size will be <strong>1790 GBit/sec</strong>.
+As a side note: the DDOS attack that brought <a href="https://blog.cloudflare.com/the-ddos-that-knocked-spamhaus-offline-and-ho/">spamhaus down</a> and cloudflare nearly to its knees , was a mere ~ 100 Gbit/sec.</p>
+                </section>
+                  <div class="btn-group">
+  <a href="" class="btn btn-default embed" data-toggle="modal" data-target="#embed-instructions">
+    <i class="fa fa-code"></i>Embed
+  </a>
+  <a href="http://twitter.com/share?url=/risk/opendns/&text=Check out this data from CyberGreen" class="btn btn-default twitter" target="_blank">
+    <i class="fa fa-twitter"></i> Twitter  </a>
+  <a href="http://www.facebook.com/sharer/sharer.php?u=/risk/opendns/" class="btn btn-default facebook" target="_blank">
+    <i class="fa fa-facebook"></i> Facebook  </a>
+  <a href="https://plus.google.com/share?url=/risk/opendns/" class="btn btn-default google-plus" target="_blank">
+    <i class="fa fa-google-plus"></i> Google+  </a>
+</div>
+<div class="modal fade" id="embed-instructions" tabindex="-1" role="dialog" aria-labelledby="embedLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="embedLabel">Map embed code</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+            Use the following code to embed the map visualisation into your own website.
+        </p>
+        <xmp contenteditable="true"><iframe width="100%" height="360px" src="/vis/map/embed/?embed_width=100%&embed_height=360px&filter_year=2016&filter_dataset=&panel_tools=false&panel_share=false&embed_title=Open DNS ; 2016&map_place=" frameBorder="0"></iframe></xmp>
+     </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div id="map-container">
+<iframe width="100%" height="360px" src="/vis/map/embed/?embed_width=100%&embed_height=360px&filter_year=2016&filter_risk=opendns&panel_tools=false&panel_share=false&embed_title=Open DNS ; 2016&map_place=" frameBorder="0"></iframe>            </div>
+        </div>
+    </div>
+</section>
+
+<hr />
+
+<section id="dataset-slice-table">
+<div class="table-responsive">
+    <table id="slice-table" class="table data-table table-header-stuck">
+        <col style="width:20%">
+        <col style="width:30%">
+        <col style="width:25%">
+        <col style="width:25%">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Place</th>
+                <th>Devices</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+
+              <tr data-rank="1" data-score="82.55" data-place="american-samoa">
+                  <td>
+                      1
+                  </td>
+                  <td>
+                    <a href="/place/american-samoa/opendns/">American Samoa</a>
+                  </td>
+                  <td data-score="10">
+                      <span>10</span>
+                  </td>
+                  <td class="score" data-score="82.55">
+                      <span>82.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="1" data-score="82.55" data-place="aruba">
+                  <td>
+                      1
+                  </td>
+                  <td>
+                    <a href="/place/aruba/opendns/">Aruba</a>
+                  </td>
+                  <td data-score="10">
+                      <span>10</span>
+                  </td>
+                  <td class="score" data-score="82.55">
+                      <span>82.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="1" data-score="82.55" data-place="aland-islands">
+                  <td>
+                      1
+                  </td>
+                  <td>
+                    <a href="/place/aland-islands/opendns/">Aland Islands</a>
+                  </td>
+                  <td data-score="10">
+                      <span>10</span>
+                  </td>
+                  <td class="score" data-score="82.55">
+                      <span>82.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="1" data-score="82.55" data-place="burundi">
+                  <td>
+                      1
+                  </td>
+                  <td>
+                    <a href="/place/burundi/opendns/">Burundi</a>
+                  </td>
+                  <td data-score="10">
+                      <span>10</span>
+                  </td>
+                  <td class="score" data-score="82.55">
+                      <span>82.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="1" data-score="82.55" data-place="bes-islands">
+                  <td>
+                      1
+                  </td>
+                  <td>
+                    <a href="/place/bes-islands/opendns/">Bonaire, Sint Eustatius and Saba</a>
+                  </td>
+                  <td data-score="10">
+                      <span>10</span>
+                  </td>
+                  <td class="score" data-score="82.55">
+                      <span>82.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="1" data-score="82.55" data-place="micronesia">
+                  <td>
+                      1
+                  </td>
+                  <td>
+                    <a href="/place/micronesia/opendns/">Micronesia</a>
+                  </td>
+                  <td data-score="10">
+                      <span>10</span>
+                  </td>
+                  <td class="score" data-score="82.55">
+                      <span>82.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="1" data-score="82.55" data-place="guinea">
+                  <td>
+                      1
+                  </td>
+                  <td>
+                    <a href="/place/guinea/opendns/">Guinea</a>
+                  </td>
+                  <td data-score="10">
+                      <span>10</span>
+                  </td>
+                  <td class="score" data-score="82.55">
+                      <span>82.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="1" data-score="82.55" data-place="comoros">
+                  <td>
+                      1
+                  </td>
+                  <td>
+                    <a href="/place/comoros/opendns/">Comoros</a>
+                  </td>
+                  <td data-score="10">
+                      <span>10</span>
+                  </td>
+                  <td class="score" data-score="82.55">
+                      <span>82.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="1" data-score="82.55" data-place="north-korea">
+                  <td>
+                      1
+                  </td>
+                  <td>
+                    <a href="/place/north-korea/opendns/">North Korea</a>
+                  </td>
+                  <td data-score="10">
+                      <span>10</span>
+                  </td>
+                  <td class="score" data-score="82.55">
+                      <span>82.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="1" data-score="82.55" data-place="liberia">
+                  <td>
+                      1
+                  </td>
+                  <td>
+                    <a href="/place/liberia/opendns/">Liberia</a>
+                  </td>
+                  <td data-score="10">
+                      <span>10</span>
+                  </td>
+                  <td class="score" data-score="82.55">
+                      <span>82.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="1" data-score="82.55" data-place="saint-martin">
+                  <td>
+                      1
+                  </td>
+                  <td>
+                    <a href="/place/saint-martin/opendns/">French Saint Martin</a>
+                  </td>
+                  <td data-score="10">
+                      <span>10</span>
+                  </td>
+                  <td class="score" data-score="82.55">
+                      <span>82.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="1" data-score="82.55" data-place="marshall-islands">
+                  <td>
+                      1
+                  </td>
+                  <td>
+                    <a href="/place/marshall-islands/opendns/">Marshall Islands</a>
+                  </td>
+                  <td data-score="10">
+                      <span>10</span>
+                  </td>
+                  <td class="score" data-score="82.55">
+                      <span>82.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="1" data-score="82.55" data-place="mali">
+                  <td>
+                      1
+                  </td>
+                  <td>
+                    <a href="/place/mali/opendns/">Mali</a>
+                  </td>
+                  <td data-score="10">
+                      <span>10</span>
+                  </td>
+                  <td class="score" data-score="82.55">
+                      <span>82.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="1" data-score="82.55" data-place="niger">
+                  <td>
+                      1
+                  </td>
+                  <td>
+                    <a href="/place/niger/opendns/">Niger</a>
+                  </td>
+                  <td data-score="10">
+                      <span>10</span>
+                  </td>
+                  <td class="score" data-score="82.55">
+                      <span>82.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="1" data-score="82.55" data-place="sierra-leone">
+                  <td>
+                      1
+                  </td>
+                  <td>
+                    <a href="/place/sierra-leone/opendns/">Sierra Leone</a>
+                  </td>
+                  <td data-score="10">
+                      <span>10</span>
+                  </td>
+                  <td class="score" data-score="82.55">
+                      <span>82.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="1" data-score="82.55" data-place="samoa">
+                  <td>
+                      1
+                  </td>
+                  <td>
+                    <a href="/place/samoa/opendns/">Samoa</a>
+                  </td>
+                  <td data-score="10">
+                      <span>10</span>
+                  </td>
+                  <td class="score" data-score="82.55">
+                      <span>82.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="16" data-score="77.3" data-place="cook-islands">
+                  <td>
+                      16
+                  </td>
+                  <td>
+                    <a href="/place/cook-islands/opendns/">Cook Islands</a>
+                  </td>
+                  <td data-score="20">
+                      <span>20</span>
+                  </td>
+                  <td class="score" data-score="77.3">
+                      <span>77.3</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="16" data-score="77.3" data-place="cabo-verde">
+                  <td>
+                      16
+                  </td>
+                  <td>
+                    <a href="/place/cabo-verde/opendns/">Cape Verde</a>
+                  </td>
+                  <td data-score="20">
+                      <span>20</span>
+                  </td>
+                  <td class="score" data-score="77.3">
+                      <span>77.3</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="16" data-score="77.3" data-place="haiti">
+                  <td>
+                      16
+                  </td>
+                  <td>
+                    <a href="/place/haiti/opendns/">Haiti</a>
+                  </td>
+                  <td data-score="20">
+                      <span>20</span>
+                  </td>
+                  <td class="score" data-score="77.3">
+                      <span>77.3</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="16" data-score="77.3" data-place="myanmar">
+                  <td>
+                      16
+                  </td>
+                  <td>
+                    <a href="/place/myanmar/opendns/">Myanmar</a>
+                  </td>
+                  <td data-score="20">
+                      <span>20</span>
+                  </td>
+                  <td class="score" data-score="77.3">
+                      <span>77.3</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="16" data-score="77.3" data-place="turks-and-caicos-islands">
+                  <td>
+                      16
+                  </td>
+                  <td>
+                    <a href="/place/turks-and-caicos-islands/opendns/">Turks and Caicos Islands</a>
+                  </td>
+                  <td data-score="20">
+                      <span>20</span>
+                  </td>
+                  <td class="score" data-score="77.3">
+                      <span>77.3</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="16" data-score="77.3" data-place="timor-Leste">
+                  <td>
+                      16
+                  </td>
+                  <td>
+                    <a href="/place/timor-Leste/opendns/">Timor-Leste</a>
+                  </td>
+                  <td data-score="20">
+                      <span>20</span>
+                  </td>
+                  <td class="score" data-score="77.3">
+                      <span>77.3</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="16" data-score="77.3" data-place="tonga">
+                  <td>
+                      16
+                  </td>
+                  <td>
+                    <a href="/place/tonga/opendns/">Tonga</a>
+                  </td>
+                  <td data-score="20">
+                      <span>20</span>
+                  </td>
+                  <td class="score" data-score="77.3">
+                      <span>77.3</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="16" data-score="77.3" data-place="vanuatu">
+                  <td>
+                      16
+                  </td>
+                  <td>
+                    <a href="/place/vanuatu/opendns/">Vanuatu</a>
+                  </td>
+                  <td data-score="20">
+                      <span>20</span>
+                  </td>
+                  <td class="score" data-score="77.3">
+                      <span>77.3</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="24" data-score="74.23" data-place="andorra">
+                  <td>
+                      24
+                  </td>
+                  <td>
+                    <a href="/place/andorra/opendns/">Andorra</a>
+                  </td>
+                  <td data-score="30">
+                      <span>30</span>
+                  </td>
+                  <td class="score" data-score="74.23">
+                      <span>74.23</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="24" data-score="74.23" data-place="anguilla">
+                  <td>
+                      24
+                  </td>
+                  <td>
+                    <a href="/place/anguilla/opendns/">Anguilla</a>
+                  </td>
+                  <td data-score="30">
+                      <span>30</span>
+                  </td>
+                  <td class="score" data-score="74.23">
+                      <span>74.23</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="24" data-score="74.23" data-place="french-guiana">
+                  <td>
+                      24
+                  </td>
+                  <td>
+                    <a href="/place/french-guiana/opendns/">French Guiana</a>
+                  </td>
+                  <td data-score="30">
+                      <span>30</span>
+                  </td>
+                  <td class="score" data-score="74.23">
+                      <span>74.23</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="24" data-score="74.23" data-place="saint-lucia">
+                  <td>
+                      24
+                  </td>
+                  <td>
+                    <a href="/place/saint-lucia/opendns/">Saint Lucia</a>
+                  </td>
+                  <td data-score="30">
+                      <span>30</span>
+                  </td>
+                  <td class="score" data-score="74.23">
+                      <span>74.23</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="24" data-score="74.23" data-place="namibia">
+                  <td>
+                      24
+                  </td>
+                  <td>
+                    <a href="/place/namibia/opendns/">Namibia</a>
+                  </td>
+                  <td data-score="30">
+                      <span>30</span>
+                  </td>
+                  <td class="score" data-score="74.23">
+                      <span>74.23</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="24" data-score="74.23" data-place="suriname">
+                  <td>
+                      24
+                  </td>
+                  <td>
+                    <a href="/place/suriname/opendns/">Suriname</a>
+                  </td>
+                  <td data-score="30">
+                      <span>30</span>
+                  </td>
+                  <td class="score" data-score="74.23">
+                      <span>74.23</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="24" data-score="74.23" data-place="sao-tome-and-principe">
+                  <td>
+                      24
+                  </td>
+                  <td>
+                    <a href="/place/sao-tome-and-principe/opendns/">Sao Tome and Principe</a>
+                  </td>
+                  <td data-score="30">
+                      <span>30</span>
+                  </td>
+                  <td class="score" data-score="74.23">
+                      <span>74.23</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="24" data-score="74.23" data-place="sint-maarten">
+                  <td>
+                      24
+                  </td>
+                  <td>
+                    <a href="/place/sint-maarten/opendns/">Dutch Sint Maarten</a>
+                  </td>
+                  <td data-score="30">
+                      <span>30</span>
+                  </td>
+                  <td class="score" data-score="74.23">
+                      <span>74.23</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="24" data-score="74.23" data-place="chad">
+                  <td>
+                      24
+                  </td>
+                  <td>
+                    <a href="/place/chad/opendns/">Chad</a>
+                  </td>
+                  <td data-score="30">
+                      <span>30</span>
+                  </td>
+                  <td class="score" data-score="74.23">
+                      <span>74.23</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="24" data-score="74.23" data-place="virgin-islands-us">
+                  <td>
+                      24
+                  </td>
+                  <td>
+                    <a href="/place/virgin-islands-us/opendns/">Virgin Islands, U.S.</a>
+                  </td>
+                  <td data-score="30">
+                      <span>30</span>
+                  </td>
+                  <td class="score" data-score="74.23">
+                      <span>74.23</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="34" data-score="72.05" data-place="congo">
+                  <td>
+                      34
+                  </td>
+                  <td>
+                    <a href="/place/congo/opendns/">Congo</a>
+                  </td>
+                  <td data-score="40">
+                      <span>40</span>
+                  </td>
+                  <td class="score" data-score="72.05">
+                      <span>72.05</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="34" data-score="72.05" data-place="equatorial-guinea">
+                  <td>
+                      34
+                  </td>
+                  <td>
+                    <a href="/place/equatorial-guinea/opendns/">Equatorial Guinea</a>
+                  </td>
+                  <td data-score="40">
+                      <span>40</span>
+                  </td>
+                  <td class="score" data-score="72.05">
+                      <span>72.05</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="36" data-score="70.36" data-place="isle-of-man">
+                  <td>
+                      36
+                  </td>
+                  <td>
+                    <a href="/place/isle-of-man/opendns/">Isle of Man</a>
+                  </td>
+                  <td data-score="50">
+                      <span>50</span>
+                  </td>
+                  <td class="score" data-score="70.36">
+                      <span>70.36</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="36" data-score="70.36" data-place="monaco">
+                  <td>
+                      36
+                  </td>
+                  <td>
+                    <a href="/place/monaco/opendns/">Monaco</a>
+                  </td>
+                  <td data-score="50">
+                      <span>50</span>
+                  </td>
+                  <td class="score" data-score="70.36">
+                      <span>70.36</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="36" data-score="70.36" data-place="rwanda">
+                  <td>
+                      36
+                  </td>
+                  <td>
+                    <a href="/place/rwanda/opendns/">Rwanda</a>
+                  </td>
+                  <td data-score="50">
+                      <span>50</span>
+                  </td>
+                  <td class="score" data-score="70.36">
+                      <span>70.36</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="36" data-score="70.36" data-place="somalia">
+                  <td>
+                      36
+                  </td>
+                  <td>
+                    <a href="/place/somalia/opendns/">Somalia</a>
+                  </td>
+                  <td data-score="50">
+                      <span>50</span>
+                  </td>
+                  <td class="score" data-score="70.36">
+                      <span>70.36</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="40" data-score="68.98" data-place="dominica">
+                  <td>
+                      40
+                  </td>
+                  <td>
+                    <a href="/place/dominica/opendns/">Dominica</a>
+                  </td>
+                  <td data-score="60">
+                      <span>60</span>
+                  </td>
+                  <td class="score" data-score="68.98">
+                      <span>68.98</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="40" data-score="68.98" data-place="french-polynesia">
+                  <td>
+                      40
+                  </td>
+                  <td>
+                    <a href="/place/french-polynesia/opendns/">French Polynesia</a>
+                  </td>
+                  <td data-score="60">
+                      <span>60</span>
+                  </td>
+                  <td class="score" data-score="68.98">
+                      <span>68.98</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="40" data-score="68.98" data-place="seychelles">
+                  <td>
+                      40
+                  </td>
+                  <td>
+                    <a href="/place/seychelles/opendns/">Seychelles</a>
+                  </td>
+                  <td data-score="60">
+                      <span>60</span>
+                  </td>
+                  <td class="score" data-score="68.98">
+                      <span>68.98</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="43" data-score="67.81" data-place="bhutan">
+                  <td>
+                      43
+                  </td>
+                  <td>
+                    <a href="/place/bhutan/opendns/">Bhutan</a>
+                  </td>
+                  <td data-score="70">
+                      <span>70</span>
+                  </td>
+                  <td class="score" data-score="67.81">
+                      <span>67.81</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="43" data-score="67.81" data-place="gambia">
+                  <td>
+                      43
+                  </td>
+                  <td>
+                    <a href="/place/gambia/opendns/">Gambia</a>
+                  </td>
+                  <td data-score="70">
+                      <span>70</span>
+                  </td>
+                  <td class="score" data-score="67.81">
+                      <span>67.81</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="43" data-score="67.81" data-place="guadeloupe">
+                  <td>
+                      43
+                  </td>
+                  <td>
+                    <a href="/place/guadeloupe/opendns/">Guadeloupe</a>
+                  </td>
+                  <td data-score="70">
+                      <span>70</span>
+                  </td>
+                  <td class="score" data-score="67.81">
+                      <span>67.81</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="43" data-score="67.81" data-place="liechtenstein">
+                  <td>
+                      43
+                  </td>
+                  <td>
+                    <a href="/place/liechtenstein/opendns/">Liechtenstein</a>
+                  </td>
+                  <td data-score="70">
+                      <span>70</span>
+                  </td>
+                  <td class="score" data-score="67.81">
+                      <span>67.81</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="43" data-score="67.81" data-place="martinique">
+                  <td>
+                      43
+                  </td>
+                  <td>
+                    <a href="/place/martinique/opendns/">Martinique</a>
+                  </td>
+                  <td data-score="70">
+                      <span>70</span>
+                  </td>
+                  <td class="score" data-score="67.81">
+                      <span>67.81</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="43" data-score="67.81" data-place="papua-new-guinea">
+                  <td>
+                      43
+                  </td>
+                  <td>
+                    <a href="/place/papua-new-guinea/opendns/">Papua New Guinea</a>
+                  </td>
+                  <td data-score="70">
+                      <span>70</span>
+                  </td>
+                  <td class="score" data-score="67.81">
+                      <span>67.81</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="43" data-score="67.81" data-place="swaziland">
+                  <td>
+                      43
+                  </td>
+                  <td>
+                    <a href="/place/swaziland/opendns/">Swaziland</a>
+                  </td>
+                  <td data-score="70">
+                      <span>70</span>
+                  </td>
+                  <td class="score" data-score="67.81">
+                      <span>67.81</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="50" data-score="66.8" data-place="grenada">
+                  <td>
+                      50
+                  </td>
+                  <td>
+                    <a href="/place/grenada/opendns/">Grenada</a>
+                  </td>
+                  <td data-score="80">
+                      <span>80</span>
+                  </td>
+                  <td class="score" data-score="66.8">
+                      <span>66.8</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="50" data-score="66.8" data-place="lesotho">
+                  <td>
+                      50
+                  </td>
+                  <td>
+                    <a href="/place/lesotho/opendns/">Lesotho</a>
+                  </td>
+                  <td data-score="80">
+                      <span>80</span>
+                  </td>
+                  <td class="score" data-score="66.8">
+                      <span>66.8</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="50" data-score="66.8" data-place="malawi">
+                  <td>
+                      50
+                  </td>
+                  <td>
+                    <a href="/place/malawi/opendns/">Malawi</a>
+                  </td>
+                  <td data-score="80">
+                      <span>80</span>
+                  </td>
+                  <td class="score" data-score="66.8">
+                      <span>66.8</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="53" data-score="65.91" data-place="cayman-islands">
+                  <td>
+                      53
+                  </td>
+                  <td>
+                    <a href="/place/cayman-islands/opendns/">Cayman Islands</a>
+                  </td>
+                  <td data-score="90">
+                      <span>90</span>
+                  </td>
+                  <td class="score" data-score="65.91">
+                      <span>65.91</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="54" data-score="65.11" data-place="faroe-islands">
+                  <td>
+                      54
+                  </td>
+                  <td>
+                    <a href="/place/faroe-islands/opendns/">Faroe Islands</a>
+                  </td>
+                  <td data-score="100">
+                      <span>100</span>
+                  </td>
+                  <td class="score" data-score="65.11">
+                      <span>65.11</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="55" data-score="64.39" data-place="san-marino">
+                  <td>
+                      55
+                  </td>
+                  <td>
+                    <a href="/place/san-marino/opendns/">San Marino</a>
+                  </td>
+                  <td data-score="110">
+                      <span>110</span>
+                  </td>
+                  <td class="score" data-score="64.39">
+                      <span>64.39</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="55" data-score="64.39" data-place="zambia">
+                  <td>
+                      55
+                  </td>
+                  <td>
+                    <a href="/place/zambia/opendns/">Zambia</a>
+                  </td>
+                  <td data-score="110">
+                      <span>110</span>
+                  </td>
+                  <td class="score" data-score="64.39">
+                      <span>64.39</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="57" data-score="63.73" data-place="antigua-and-barbuda">
+                  <td>
+                      57
+                  </td>
+                  <td>
+                    <a href="/place/antigua-and-barbuda/opendns/">Antigua and Barbuda</a>
+                  </td>
+                  <td data-score="120">
+                      <span>120</span>
+                  </td>
+                  <td class="score" data-score="63.73">
+                      <span>63.73</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="57" data-score="63.73" data-place="benin">
+                  <td>
+                      57
+                  </td>
+                  <td>
+                    <a href="/place/benin/opendns/">Benin</a>
+                  </td>
+                  <td data-score="120">
+                      <span>120</span>
+                  </td>
+                  <td class="score" data-score="63.73">
+                      <span>63.73</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="57" data-score="63.73" data-place="bahamas">
+                  <td>
+                      57
+                  </td>
+                  <td>
+                    <a href="/place/bahamas/opendns/">Bahamas</a>
+                  </td>
+                  <td data-score="120">
+                      <span>120</span>
+                  </td>
+                  <td class="score" data-score="63.73">
+                      <span>63.73</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="57" data-score="63.73" data-place="guernsey">
+                  <td>
+                      57
+                  </td>
+                  <td>
+                    <a href="/place/guernsey/opendns/">Guernsey</a>
+                  </td>
+                  <td data-score="120">
+                      <span>120</span>
+                  </td>
+                  <td class="score" data-score="63.73">
+                      <span>63.73</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="57" data-score="63.73" data-place="madagascar">
+                  <td>
+                      57
+                  </td>
+                  <td>
+                    <a href="/place/madagascar/opendns/">Madagascar</a>
+                  </td>
+                  <td data-score="120">
+                      <span>120</span>
+                  </td>
+                  <td class="score" data-score="63.73">
+                      <span>63.73</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="57" data-score="63.73" data-place="new-caledonia">
+                  <td>
+                      57
+                  </td>
+                  <td>
+                    <a href="/place/new-caledonia/opendns/">New Caledonia</a>
+                  </td>
+                  <td data-score="120">
+                      <span>120</span>
+                  </td>
+                  <td class="score" data-score="63.73">
+                      <span>63.73</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="57" data-score="63.73" data-place="reunion">
+                  <td>
+                      57
+                  </td>
+                  <td>
+                    <a href="/place/reunion/opendns/">Reunion</a>
+                  </td>
+                  <td data-score="120">
+                      <span>120</span>
+                  </td>
+                  <td class="score" data-score="63.73">
+                      <span>63.73</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="64" data-score="63.12" data-place="drc">
+                  <td>
+                      64
+                  </td>
+                  <td>
+                    <a href="/place/drc/opendns/">Democratic Republic of Congo</a>
+                  </td>
+                  <td data-score="130">
+                      <span>130</span>
+                  </td>
+                  <td class="score" data-score="63.12">
+                      <span>63.12</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="64" data-score="63.12" data-place="tajikistan">
+                  <td>
+                      64
+                  </td>
+                  <td>
+                    <a href="/place/tajikistan/opendns/">Tajikistan</a>
+                  </td>
+                  <td data-score="130">
+                      <span>130</span>
+                  </td>
+                  <td class="score" data-score="63.12">
+                      <span>63.12</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="64" data-score="63.12" data-place="uganda">
+                  <td>
+                      64
+                  </td>
+                  <td>
+                    <a href="/place/uganda/opendns/">Uganda</a>
+                  </td>
+                  <td data-score="130">
+                      <span>130</span>
+                  </td>
+                  <td class="score" data-score="63.12">
+                      <span>63.12</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="67" data-score="62.56" data-place="gabon">
+                  <td>
+                      67
+                  </td>
+                  <td>
+                    <a href="/place/gabon/opendns/">Gabon</a>
+                  </td>
+                  <td data-score="140">
+                      <span>140</span>
+                  </td>
+                  <td class="score" data-score="62.56">
+                      <span>62.56</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="67" data-score="62.56" data-place="gibraltar">
+                  <td>
+                      67
+                  </td>
+                  <td>
+                    <a href="/place/gibraltar/opendns/">Gibraltar</a>
+                  </td>
+                  <td data-score="140">
+                      <span>140</span>
+                  </td>
+                  <td class="score" data-score="62.56">
+                      <span>62.56</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="67" data-score="62.56" data-place="jersey">
+                  <td>
+                      67
+                  </td>
+                  <td>
+                    <a href="/place/jersey/opendns/">Jersey</a>
+                  </td>
+                  <td data-score="140">
+                      <span>140</span>
+                  </td>
+                  <td class="score" data-score="62.56">
+                      <span>62.56</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="70" data-score="62.04" data-place="bermuda">
+                  <td>
+                      70
+                  </td>
+                  <td>
+                    <a href="/place/bermuda/opendns/">Bermuda</a>
+                  </td>
+                  <td data-score="150">
+                      <span>150</span>
+                  </td>
+                  <td class="score" data-score="62.04">
+                      <span>62.04</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="70" data-score="62.04" data-place="guyana">
+                  <td>
+                      70
+                  </td>
+                  <td>
+                    <a href="/place/guyana/opendns/">Guyana</a>
+                  </td>
+                  <td data-score="150">
+                      <span>150</span>
+                  </td>
+                  <td class="score" data-score="62.04">
+                      <span>62.04</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="72" data-score="61.55" data-place="botswana">
+                  <td>
+                      72
+                  </td>
+                  <td>
+                    <a href="/place/botswana/opendns/">Botswana</a>
+                  </td>
+                  <td data-score="160">
+                      <span>160</span>
+                  </td>
+                  <td class="score" data-score="61.55">
+                      <span>61.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="72" data-score="61.55" data-place="curacao">
+                  <td>
+                      72
+                  </td>
+                  <td>
+                    <a href="/place/curacao/opendns/">Curacao</a>
+                  </td>
+                  <td data-score="160">
+                      <span>160</span>
+                  </td>
+                  <td class="score" data-score="61.55">
+                      <span>61.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="72" data-score="61.55" data-place="mongolia">
+                  <td>
+                      72
+                  </td>
+                  <td>
+                    <a href="/place/mongolia/opendns/">Mongolia</a>
+                  </td>
+                  <td data-score="160">
+                      <span>160</span>
+                  </td>
+                  <td class="score" data-score="61.55">
+                      <span>61.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="75" data-score="61.09" data-place="brunei">
+                  <td>
+                      75
+                  </td>
+                  <td>
+                    <a href="/place/brunei/opendns/">Brunei Darussalam</a>
+                  </td>
+                  <td data-score="170">
+                      <span>170</span>
+                  </td>
+                  <td class="score" data-score="61.09">
+                      <span>61.09</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="76" data-score="60.65" data-place="saint-kitts-and-nevis">
+                  <td>
+                      76
+                  </td>
+                  <td>
+                    <a href="/place/saint-kitts-and-nevis/opendns/">Saint Kitts and Nevis</a>
+                  </td>
+                  <td data-score="180">
+                      <span>180</span>
+                  </td>
+                  <td class="score" data-score="60.65">
+                      <span>60.65</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="77" data-score="60.25" data-place="paraguay">
+                  <td>
+                      77
+                  </td>
+                  <td>
+                    <a href="/place/paraguay/opendns/">Paraguay</a>
+                  </td>
+                  <td data-score="190">
+                      <span>190</span>
+                  </td>
+                  <td class="score" data-score="60.25">
+                      <span>60.25</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="78" data-score="59.49" data-place="jamaica">
+                  <td>
+                      78
+                  </td>
+                  <td>
+                    <a href="/place/jamaica/opendns/">Jamaica</a>
+                  </td>
+                  <td data-score="210">
+                      <span>210</span>
+                  </td>
+                  <td class="score" data-score="59.49">
+                      <span>59.49</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="79" data-score="59.13" data-place="togo">
+                  <td>
+                      79
+                  </td>
+                  <td>
+                    <a href="/place/togo/opendns/">Togo</a>
+                  </td>
+                  <td data-score="220">
+                      <span>220</span>
+                  </td>
+                  <td class="score" data-score="59.13">
+                      <span>59.13</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="81" data-score="58.48" data-place="kosovo">
+                  <td>
+                      81
+                  </td>
+                  <td>
+                    <a href="/place/kosovo/opendns/">Kosovo</a>
+                  </td>
+                  <td data-score="240">
+                      <span>240</span>
+                  </td>
+                  <td class="score" data-score="58.48">
+                      <span>58.48</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="82" data-score="58.17" data-place="laos">
+                  <td>
+                      82
+                  </td>
+                  <td>
+                    <a href="/place/laos/opendns/">Laos</a>
+                  </td>
+                  <td data-score="250">
+                      <span>250</span>
+                  </td>
+                  <td class="score" data-score="58.17">
+                      <span>58.17</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="80" data-score="58.8" data-place="zimbabwe">
+                  <td>
+                      80
+                  </td>
+                  <td>
+                    <a href="/place/zimbabwe/opendns/">Zimbabwe</a>
+                  </td>
+                  <td data-score="230">
+                      <span>230</span>
+                  </td>
+                  <td class="score" data-score="58.8">
+                      <span>58.8</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="83" data-score="57.87" data-place="cuba">
+                  <td>
+                      83
+                  </td>
+                  <td>
+                    <a href="/place/cuba/opendns/">Cuba</a>
+                  </td>
+                  <td data-score="260">
+                      <span>260</span>
+                  </td>
+                  <td class="score" data-score="57.87">
+                      <span>57.87</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="83" data-score="57.87" data-place="qatar">
+                  <td>
+                      83
+                  </td>
+                  <td>
+                    <a href="/place/qatar/opendns/">Qatar</a>
+                  </td>
+                  <td data-score="260">
+                      <span>260</span>
+                  </td>
+                  <td class="score" data-score="57.87">
+                      <span>57.87</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="85" data-score="57.04" data-place="cameroon">
+                  <td>
+                      85
+                  </td>
+                  <td>
+                    <a href="/place/cameroon/opendns/">Cameroon</a>
+                  </td>
+                  <td data-score="290">
+                      <span>290</span>
+                  </td>
+                  <td class="score" data-score="57.04">
+                      <span>57.04</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="85" data-score="57.04" data-place="montenegro">
+                  <td>
+                      85
+                  </td>
+                  <td>
+                    <a href="/place/montenegro/opendns/">Montenegro</a>
+                  </td>
+                  <td data-score="290">
+                      <span>290</span>
+                  </td>
+                  <td class="score" data-score="57.04">
+                      <span>57.04</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="87" data-score="56.06" data-place="malta">
+                  <td>
+                      87
+                  </td>
+                  <td>
+                    <a href="/place/malta/opendns/">Malta</a>
+                  </td>
+                  <td data-score="330">
+                      <span>330</span>
+                  </td>
+                  <td class="score" data-score="56.06">
+                      <span>56.06</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="88" data-score="55.62" data-place="kyrgyzstan">
+                  <td>
+                      88
+                  </td>
+                  <td>
+                    <a href="/place/kyrgyzstan/opendns/">Kyrgyzstan</a>
+                  </td>
+                  <td data-score="350">
+                      <span>350</span>
+                  </td>
+                  <td class="score" data-score="55.62">
+                      <span>55.62</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="89" data-score="55.4" data-place="burkina-faso">
+                  <td>
+                      89
+                  </td>
+                  <td>
+                    <a href="/place/burkina-faso/opendns/">Burkina Faso</a>
+                  </td>
+                  <td data-score="360">
+                      <span>360</span>
+                  </td>
+                  <td class="score" data-score="55.4">
+                      <span>55.4</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="90" data-score="55.2" data-place="cote-divoire">
+                  <td>
+                      90
+                  </td>
+                  <td>
+                    <a href="/place/cote-divoire/opendns/">Cote d'Ivoire</a>
+                  </td>
+                  <td data-score="370">
+                      <span>370</span>
+                  </td>
+                  <td class="score" data-score="55.2">
+                      <span>55.2</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="91" data-score="54.24" data-place="nigeria">
+                  <td>
+                      91
+                  </td>
+                  <td>
+                    <a href="/place/nigeria/opendns/">Nigeria</a>
+                  </td>
+                  <td data-score="420">
+                      <span>420</span>
+                  </td>
+                  <td class="score" data-score="54.24">
+                      <span>54.24</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="92" data-score="53.88" data-place="tanzania">
+                  <td>
+                      92
+                  </td>
+                  <td>
+                    <a href="/place/tanzania/opendns/">Tanzania</a>
+                  </td>
+                  <td data-score="440">
+                      <span>440</span>
+                  </td>
+                  <td class="score" data-score="53.88">
+                      <span>53.88</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="93" data-score="53.22" data-place="bahrain">
+                  <td>
+                      93
+                  </td>
+                  <td>
+                    <a href="/place/bahrain/opendns/">Bahrain</a>
+                  </td>
+                  <td data-score="480">
+                      <span>480</span>
+                  </td>
+                  <td class="score" data-score="53.22">
+                      <span>53.22</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="94" data-score="53.07" data-place="macao">
+                  <td>
+                      94
+                  </td>
+                  <td>
+                    <a href="/place/macao/opendns/">Macao</a>
+                  </td>
+                  <td data-score="490">
+                      <span>490</span>
+                  </td>
+                  <td class="score" data-score="53.07">
+                      <span>53.07</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="94" data-score="53.07" data-place="maldives">
+                  <td>
+                      94
+                  </td>
+                  <td>
+                    <a href="/place/maldives/opendns/">Maldives</a>
+                  </td>
+                  <td data-score="490">
+                      <span>490</span>
+                  </td>
+                  <td class="score" data-score="53.07">
+                      <span>53.07</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="96" data-score="52.91" data-place="sudan">
+                  <td>
+                      96
+                  </td>
+                  <td>
+                    <a href="/place/sudan/opendns/">Sudan</a>
+                  </td>
+                  <td data-score="500">
+                      <span>500</span>
+                  </td>
+                  <td class="score" data-score="52.91">
+                      <span>52.91</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="97" data-score="52.76" data-place="iceland">
+                  <td>
+                      97
+                  </td>
+                  <td>
+                    <a href="/place/iceland/opendns/">Iceland</a>
+                  </td>
+                  <td data-score="510">
+                      <span>510</span>
+                  </td>
+                  <td class="score" data-score="52.76">
+                      <span>52.76</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="98" data-score="52.62" data-place="mauritania">
+                  <td>
+                      98
+                  </td>
+                  <td>
+                    <a href="/place/mauritania/opendns/">Mauritania</a>
+                  </td>
+                  <td data-score="520">
+                      <span>520</span>
+                  </td>
+                  <td class="score" data-score="52.62">
+                      <span>52.62</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="98" data-score="52.62" data-place="st.-Vincent-and-the-Grenadines">
+                  <td>
+                      98
+                  </td>
+                  <td>
+                    <a href="/place/st.-Vincent-and-the-Grenadines/opendns/">St. Vincent & the Grenadines</a>
+                  </td>
+                  <td data-score="520">
+                      <span>520</span>
+                  </td>
+                  <td class="score" data-score="52.62">
+                      <span>52.62</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="100" data-score="52.19" data-place="fiji">
+                  <td>
+                      100
+                  </td>
+                  <td>
+                    <a href="/place/fiji/opendns/">Fiji</a>
+                  </td>
+                  <td data-score="550">
+                      <span>550</span>
+                  </td>
+                  <td class="score" data-score="52.19">
+                      <span>52.19</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="101" data-score="51.41" data-place="angola">
+                  <td>
+                      101
+                  </td>
+                  <td>
+                    <a href="/place/angola/opendns/">Angola</a>
+                  </td>
+                  <td data-score="610">
+                      <span>610</span>
+                  </td>
+                  <td class="score" data-score="51.41">
+                      <span>51.41</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="101" data-score="51.41" data-place="kenya">
+                  <td>
+                      101
+                  </td>
+                  <td>
+                    <a href="/place/kenya/opendns/">Kenya</a>
+                  </td>
+                  <td data-score="610">
+                      <span>610</span>
+                  </td>
+                  <td class="score" data-score="51.41">
+                      <span>51.41</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="103" data-score="51.04" data-place="cyprus">
+                  <td>
+                      103
+                  </td>
+                  <td>
+                    <a href="/place/cyprus/opendns/">Cyprus</a>
+                  </td>
+                  <td data-score="640">
+                      <span>640</span>
+                  </td>
+                  <td class="score" data-score="51.04">
+                      <span>51.04</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="104" data-score="50.93" data-place="guam">
+                  <td>
+                      104
+                  </td>
+                  <td>
+                    <a href="/place/guam/opendns/">Guam</a>
+                  </td>
+                  <td data-score="650">
+                      <span>650</span>
+                  </td>
+                  <td class="score" data-score="50.93">
+                      <span>50.93</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="106" data-score="50.26" data-place="cambodia">
+                  <td>
+                      106
+                  </td>
+                  <td>
+                    <a href="/place/cambodia/opendns/">Cambodia</a>
+                  </td>
+                  <td data-score="710">
+                      <span>710</span>
+                  </td>
+                  <td class="score" data-score="50.26">
+                      <span>50.26</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="105" data-score="50.7" data-place="luxembourg">
+                  <td>
+                      105
+                  </td>
+                  <td>
+                    <a href="/place/luxembourg/opendns/">Luxembourg</a>
+                  </td>
+                  <td data-score="670">
+                      <span>670</span>
+                  </td>
+                  <td class="score" data-score="50.7">
+                      <span>50.7</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="107" data-score="49.94" data-place="puerto-rico">
+                  <td>
+                      107
+                  </td>
+                  <td>
+                    <a href="/place/puerto-rico/opendns/">Puerto Rico</a>
+                  </td>
+                  <td data-score="740">
+                      <span>740</span>
+                  </td>
+                  <td class="score" data-score="49.94">
+                      <span>49.94</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="108" data-score="49.07" data-place="trinidad-and-tobago">
+                  <td>
+                      108
+                  </td>
+                  <td>
+                    <a href="/place/trinidad-and-tobago/opendns/">Trinidad and Tobago</a>
+                  </td>
+                  <td data-score="830">
+                      <span>830</span>
+                  </td>
+                  <td class="score" data-score="49.07">
+                      <span>49.07</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="109" data-score="48.72" data-place="mauritius">
+                  <td>
+                      109
+                  </td>
+                  <td>
+                    <a href="/place/mauritius/opendns/">Mauritius</a>
+                  </td>
+                  <td data-score="870">
+                      <span>870</span>
+                  </td>
+                  <td class="score" data-score="48.72">
+                      <span>48.72</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="110" data-score="48.63" data-place="barbados">
+                  <td>
+                      110
+                  </td>
+                  <td>
+                    <a href="/place/barbados/opendns/">Barbados</a>
+                  </td>
+                  <td data-score="880">
+                      <span>880</span>
+                  </td>
+                  <td class="score" data-score="48.63">
+                      <span>48.63</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="110" data-score="48.63" data-place="belize">
+                  <td>
+                      110
+                  </td>
+                  <td>
+                    <a href="/place/belize/opendns/">Belize</a>
+                  </td>
+                  <td data-score="880">
+                      <span>880</span>
+                  </td>
+                  <td class="score" data-score="48.63">
+                      <span>48.63</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="110" data-score="48.63" data-place="ghana">
+                  <td>
+                      110
+                  </td>
+                  <td>
+                    <a href="/place/ghana/opendns/">Ghana</a>
+                  </td>
+                  <td data-score="880">
+                      <span>880</span>
+                  </td>
+                  <td class="score" data-score="48.63">
+                      <span>48.63</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="113" data-score="48.55" data-place="afghanistan">
+                  <td>
+                      113
+                  </td>
+                  <td>
+                    <a href="/place/afghanistan/opendns/">Afghanistan</a>
+                  </td>
+                  <td data-score="890">
+                      <span>890</span>
+                  </td>
+                  <td class="score" data-score="48.55">
+                      <span>48.55</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="114" data-score="48.46" data-place="honduras">
+                  <td>
+                      114
+                  </td>
+                  <td>
+                    <a href="/place/honduras/opendns/">Honduras</a>
+                  </td>
+                  <td data-score="900">
+                      <span>900</span>
+                  </td>
+                  <td class="score" data-score="48.46">
+                      <span>48.46</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="115" data-score="48.38" data-place="iraq">
+                  <td>
+                      115
+                  </td>
+                  <td>
+                    <a href="/place/iraq/opendns/">Iraq</a>
+                  </td>
+                  <td data-score="910">
+                      <span>910</span>
+                  </td>
+                  <td class="score" data-score="48.38">
+                      <span>48.38</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="116" data-score="48.21" data-place="oman">
+                  <td>
+                      116
+                  </td>
+                  <td>
+                    <a href="/place/oman/opendns/">Oman</a>
+                  </td>
+                  <td data-score="930">
+                      <span>930</span>
+                  </td>
+                  <td class="score" data-score="48.21">
+                      <span>48.21</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="117" data-score="47.82" data-place="virgin-islands-british">
+                  <td>
+                      117
+                  </td>
+                  <td>
+                    <a href="/place/virgin-islands-british/opendns/">Virgin Islands, British</a>
+                  </td>
+                  <td data-score="980">
+                      <span>980</span>
+                  </td>
+                  <td class="score" data-score="47.82">
+                      <span>47.82</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="118" data-score="47.74" data-place="mozambique">
+                  <td>
+                      118
+                  </td>
+                  <td>
+                    <a href="/place/mozambique/opendns/">Mozambique</a>
+                  </td>
+                  <td data-score="990">
+                      <span>990</span>
+                  </td>
+                  <td class="score" data-score="47.74">
+                      <span>47.74</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="119" data-score="47.29" data-place="slovenia">
+                  <td>
+                      119
+                  </td>
+                  <td>
+                    <a href="/place/slovenia/opendns/">Slovenia</a>
+                  </td>
+                  <td data-score="1050">
+                      <span>1050</span>
+                  </td>
+                  <td class="score" data-score="47.29">
+                      <span>47.29</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="120" data-score="46.34" data-place="uzbekistan">
+                  <td>
+                      120
+                  </td>
+                  <td>
+                    <a href="/place/uzbekistan/opendns/">Uzbekistan</a>
+                  </td>
+                  <td data-score="1190">
+                      <span>1190</span>
+                  </td>
+                  <td class="score" data-score="46.34">
+                      <span>46.34</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="121" data-score="46.16" data-place="senegal">
+                  <td>
+                      121
+                  </td>
+                  <td>
+                    <a href="/place/senegal/opendns/">Senegal</a>
+                  </td>
+                  <td data-score="1220">
+                      <span>1220</span>
+                  </td>
+                  <td class="score" data-score="46.16">
+                      <span>46.16</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+
+
+
+              <tr data-rank="123" data-score="45.67" data-place="albania">
+                  <td>
+                      123
+                  </td>
+                  <td>
+                    <a href="/place/albania/opendns/">Albania</a>
+                  </td>
+                  <td data-score="1300">
+                      <span>1300</span>
+                  </td>
+                  <td class="score" data-score="45.67">
+                      <span>45.67</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="124" data-score="45.56" data-place="macedonia">
+                  <td>
+                      124
+                  </td>
+                  <td>
+                    <a href="/place/macedonia/opendns/">FYR Macedonia</a>
+                  </td>
+                  <td data-score="1320">
+                      <span>1320</span>
+                  </td>
+                  <td class="score" data-score="45.56">
+                      <span>45.56</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="125" data-score="45.01" data-place="costa-rica">
+                  <td>
+                      125
+                  </td>
+                  <td>
+                    <a href="/place/costa-rica/opendns/">Costa Rica</a>
+                  </td>
+                  <td data-score="1420">
+                      <span>1420</span>
+                  </td>
+                  <td class="score" data-score="45.01">
+                      <span>45.01</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="126" data-score="44.69" data-place="estonia">
+                  <td>
+                      126
+                  </td>
+                  <td>
+                    <a href="/place/estonia/opendns/">Estonia</a>
+                  </td>
+                  <td data-score="1480">
+                      <span>1480</span>
+                  </td>
+                  <td class="score" data-score="44.69">
+                      <span>44.69</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="128" data-score="43.29" data-place="yemen">
+                  <td>
+                      128
+                  </td>
+                  <td>
+                    <a href="/place/yemen/opendns/">Yemen</a>
+                  </td>
+                  <td data-score="1780">
+                      <span>1780</span>
+                  </td>
+                  <td class="score" data-score="43.29">
+                      <span>43.29</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="127" data-score="43.6" data-place="nicaragua">
+                  <td>
+                      127
+                  </td>
+                  <td>
+                    <a href="/place/nicaragua/opendns/">Nicaragua</a>
+                  </td>
+                  <td data-score="1710">
+                      <span>1710</span>
+                  </td>
+                  <td class="score" data-score="43.6">
+                      <span>43.6</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="129" data-score="42.84" data-place="latvia">
+                  <td>
+                      129
+                  </td>
+                  <td>
+                    <a href="/place/latvia/opendns/">Latvia</a>
+                  </td>
+                  <td data-score="1890">
+                      <span>1890</span>
+                  </td>
+                  <td class="score" data-score="42.84">
+                      <span>42.84</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="131" data-score="42.53" data-place="libya">
+                  <td>
+                      131
+                  </td>
+                  <td>
+                    <a href="/place/libya/opendns/">Libya</a>
+                  </td>
+                  <td data-score="1970">
+                      <span>1970</span>
+                  </td>
+                  <td class="score" data-score="42.53">
+                      <span>42.53</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="130" data-score="42.8" data-place="jordan">
+                  <td>
+                      130
+                  </td>
+                  <td>
+                    <a href="/place/jordan/opendns/">Jordan</a>
+                  </td>
+                  <td data-score="1900">
+                      <span>1900</span>
+                  </td>
+                  <td class="score" data-score="42.8">
+                      <span>42.8</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="132" data-score="41.97" data-place="panama">
+                  <td>
+                      132
+                  </td>
+                  <td>
+                    <a href="/place/panama/opendns/">Panama</a>
+                  </td>
+                  <td data-score="2120">
+                      <span>2120</span>
+                  </td>
+                  <td class="score" data-score="41.97">
+                      <span>41.97</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="133" data-score="41.9" data-place="kuwait">
+                  <td>
+                      133
+                  </td>
+                  <td>
+                    <a href="/place/kuwait/opendns/">Kuwait</a>
+                  </td>
+                  <td data-score="2140">
+                      <span>2140</span>
+                  </td>
+                  <td class="score" data-score="41.9">
+                      <span>41.9</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="134" data-score="40.72" data-place="bangladesh">
+                  <td>
+                      134
+                  </td>
+                  <td>
+                    <a href="/place/bangladesh/opendns/">Bangladesh</a>
+                  </td>
+                  <td data-score="2500">
+                      <span>2500</span>
+                  </td>
+                  <td class="score" data-score="40.72">
+                      <span>40.72</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="135" data-score="40.69" data-place="denmark">
+                  <td>
+                      135
+                  </td>
+                  <td>
+                    <a href="/place/denmark/opendns/">Denmark</a>
+                  </td>
+                  <td data-score="2510">
+                      <span>2510</span>
+                  </td>
+                  <td class="score" data-score="40.69">
+                      <span>40.69</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="136" data-score="40.63" data-place="finland">
+                  <td>
+                      136
+                  </td>
+                  <td>
+                    <a href="/place/finland/opendns/">Finland</a>
+                  </td>
+                  <td data-score="2530">
+                      <span>2530</span>
+                  </td>
+                  <td class="score" data-score="40.63">
+                      <span>40.63</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="137" data-score="39.92" data-place="new-zealand">
+                  <td>
+                      137
+                  </td>
+                  <td>
+                    <a href="/place/new-zealand/opendns/">New Zealand</a>
+                  </td>
+                  <td data-score="2780">
+                      <span>2780</span>
+                  </td>
+                  <td class="score" data-score="39.92">
+                      <span>39.92</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="138" data-score="39.89" data-place="el-salvador">
+                  <td>
+                      138
+                  </td>
+                  <td>
+                    <a href="/place/el-salvador/opendns/">El Salvador</a>
+                  </td>
+                  <td data-score="2790">
+                      <span>2790</span>
+                  </td>
+                  <td class="score" data-score="39.89">
+                      <span>39.89</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="139" data-score="39.39" data-place="ireland">
+                  <td>
+                      139
+                  </td>
+                  <td>
+                    <a href="/place/ireland/opendns/">Ireland</a>
+                  </td>
+                  <td data-score="2980">
+                      <span>2980</span>
+                  </td>
+                  <td class="score" data-score="39.39">
+                      <span>39.39</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="140" data-score="39.14" data-place="belgium">
+                  <td>
+                      140
+                  </td>
+                  <td>
+                    <a href="/place/belgium/opendns/">Belgium</a>
+                  </td>
+                  <td data-score="3080">
+                      <span>3080</span>
+                  </td>
+                  <td class="score" data-score="39.14">
+                      <span>39.14</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="141" data-score="38.94" data-place="belarus">
+                  <td>
+                      141
+                  </td>
+                  <td>
+                    <a href="/place/belarus/opendns/">Belarus</a>
+                  </td>
+                  <td data-score="3160">
+                      <span>3160</span>
+                  </td>
+                  <td class="score" data-score="38.94">
+                      <span>38.94</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="141" data-score="38.94" data-place="sri-lanka">
+                  <td>
+                      141
+                  </td>
+                  <td>
+                    <a href="/place/sri-lanka/opendns/">Sri Lanka</a>
+                  </td>
+                  <td data-score="3160">
+                      <span>3160</span>
+                  </td>
+                  <td class="score" data-score="38.94">
+                      <span>38.94</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="143" data-score="38.73" data-place="austria">
+                  <td>
+                      143
+                  </td>
+                  <td>
+                    <a href="/place/austria/opendns/">Austria</a>
+                  </td>
+                  <td data-score="3250">
+                      <span>3250</span>
+                  </td>
+                  <td class="score" data-score="38.73">
+                      <span>38.73</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="143" data-score="38.73" data-place="lithuania">
+                  <td>
+                      143
+                  </td>
+                  <td>
+                    <a href="/place/lithuania/opendns/">Lithuania</a>
+                  </td>
+                  <td data-score="3250">
+                      <span>3250</span>
+                  </td>
+                  <td class="score" data-score="38.73">
+                      <span>38.73</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="145" data-score="38.64" data-place="georgia">
+                  <td>
+                      145
+                  </td>
+                  <td>
+                    <a href="/place/georgia/opendns/">Georgia</a>
+                  </td>
+                  <td data-score="3290">
+                      <span>3290</span>
+                  </td>
+                  <td class="score" data-score="38.64">
+                      <span>38.64</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="145" data-score="38.64" data-place="venezuela">
+                  <td>
+                      145
+                  </td>
+                  <td>
+                    <a href="/place/venezuela/opendns/">Venezuela</a>
+                  </td>
+                  <td data-score="3290">
+                      <span>3290</span>
+                  </td>
+                  <td class="score" data-score="38.64">
+                      <span>38.64</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="147" data-score="37.83" data-place="peru">
+                  <td>
+                      147
+                  </td>
+                  <td>
+                    <a href="/place/peru/opendns/">Peru</a>
+                  </td>
+                  <td data-score="3660">
+                      <span>3660</span>
+                  </td>
+                  <td class="score" data-score="37.83">
+                      <span>37.83</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="148" data-score="37.67" data-place="norway">
+                  <td>
+                      148
+                  </td>
+                  <td>
+                    <a href="/place/norway/opendns/">Norway</a>
+                  </td>
+                  <td data-score="3740">
+                      <span>3740</span>
+                  </td>
+                  <td class="score" data-score="37.67">
+                      <span>37.67</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="149" data-score="37.33" data-place="israel">
+                  <td>
+                      149
+                  </td>
+                  <td>
+                    <a href="/place/israel/opendns/">Israel</a>
+                  </td>
+                  <td data-score="3910">
+                      <span>3910</span>
+                  </td>
+                  <td class="score" data-score="37.33">
+                      <span>37.33</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="150" data-score="36.84" data-place="guatemala">
+                  <td>
+                      150
+                  </td>
+                  <td>
+                    <a href="/place/guatemala/opendns/">Guatemala</a>
+                  </td>
+                  <td data-score="4170">
+                      <span>4170</span>
+                  </td>
+                  <td class="score" data-score="36.84">
+                      <span>36.84</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="151" data-score="36.79" data-place="chile">
+                  <td>
+                      151
+                  </td>
+                  <td>
+                    <a href="/place/chile/opendns/">Chile</a>
+                  </td>
+                  <td data-score="4200">
+                      <span>4200</span>
+                  </td>
+                  <td class="score" data-score="36.79">
+                      <span>36.79</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="152" data-score="36.65" data-place="united-arab-emirates">
+                  <td>
+                      152
+                  </td>
+                  <td>
+                    <a href="/place/united-arab-emirates/opendns/">United Arab Emirates</a>
+                  </td>
+                  <td data-score="4280">
+                      <span>4280</span>
+                  </td>
+                  <td class="score" data-score="36.65">
+                      <span>36.65</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="153" data-score="36.51" data-place="portugal">
+                  <td>
+                      153
+                  </td>
+                  <td>
+                    <a href="/place/portugal/opendns/">Portugal</a>
+                  </td>
+                  <td data-score="4360">
+                      <span>4360</span>
+                  </td>
+                  <td class="score" data-score="36.51">
+                      <span>36.51</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="154" data-score="36.32" data-place="bolivia">
+                  <td>
+                      154
+                  </td>
+                  <td>
+                    <a href="/place/bolivia/opendns/">Bolivia</a>
+                  </td>
+                  <td data-score="4470">
+                      <span>4470</span>
+                  </td>
+                  <td class="score" data-score="36.32">
+                      <span>36.32</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="155" data-score="36.08" data-place="ecuador">
+                  <td>
+                      155
+                  </td>
+                  <td>
+                    <a href="/place/ecuador/opendns/">Ecuador</a>
+                  </td>
+                  <td data-score="4610">
+                      <span>4610</span>
+                  </td>
+                  <td class="score" data-score="36.08">
+                      <span>36.08</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="156" data-score="35.78" data-place="saudi-arabia">
+                  <td>
+                      156
+                  </td>
+                  <td>
+                    <a href="/place/saudi-arabia/opendns/">Saudi Arabia</a>
+                  </td>
+                  <td data-score="4800">
+                      <span>4800</span>
+                  </td>
+                  <td class="score" data-score="35.78">
+                      <span>35.78</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="157" data-score="35.41" data-place="lebanon">
+                  <td>
+                      157
+                  </td>
+                  <td>
+                    <a href="/place/lebanon/opendns/">Lebanon</a>
+                  </td>
+                  <td data-score="5040">
+                      <span>5040</span>
+                  </td>
+                  <td class="score" data-score="35.41">
+                      <span>35.41</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="158" data-score="33.96" data-place="nepal">
+                  <td>
+                      158
+                  </td>
+                  <td>
+                    <a href="/place/nepal/opendns/">Nepal</a>
+                  </td>
+                  <td data-score="6100">
+                      <span>6100</span>
+                  </td>
+                  <td class="score" data-score="33.96">
+                      <span>33.96</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="159" data-score="33.17" data-place="pakistan">
+                  <td>
+                      159
+                  </td>
+                  <td>
+                    <a href="/place/pakistan/opendns/">Pakistan</a>
+                  </td>
+                  <td data-score="6770">
+                      <span>6770</span>
+                  </td>
+                  <td class="score" data-score="33.17">
+                      <span>33.17</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="160" data-score="33.13" data-place="armenia">
+                  <td>
+                      160
+                  </td>
+                  <td>
+                    <a href="/place/armenia/opendns/">Armenia</a>
+                  </td>
+                  <td data-score="6810">
+                      <span>6810</span>
+                  </td>
+                  <td class="score" data-score="33.13">
+                      <span>33.13</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="161" data-score="32.36" data-place="hungary">
+                  <td>
+                      161
+                  </td>
+                  <td>
+                    <a href="/place/hungary/opendns/">Hungary</a>
+                  </td>
+                  <td data-score="7540">
+                      <span>7540</span>
+                  </td>
+                  <td class="score" data-score="32.36">
+                      <span>32.36</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="162" data-score="32.27" data-place="switzerland">
+                  <td>
+                      162
+                  </td>
+                  <td>
+                    <a href="/place/switzerland/opendns/">Switzerland</a>
+                  </td>
+                  <td data-score="7630">
+                      <span>7630</span>
+                  </td>
+                  <td class="score" data-score="32.27">
+                      <span>32.27</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="163" data-score="31.91" data-place="singapore">
+                  <td>
+                      163
+                  </td>
+                  <td>
+                    <a href="/place/singapore/opendns/">Singapore</a>
+                  </td>
+                  <td data-score="8000">
+                      <span>8000</span>
+                  </td>
+                  <td class="score" data-score="31.91">
+                      <span>31.91</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="164" data-score="31.1" data-place="croatia">
+                  <td>
+                      164
+                  </td>
+                  <td>
+                    <a href="/place/croatia/opendns/">Croatia</a>
+                  </td>
+                  <td data-score="8900">
+                      <span>8900</span>
+                  </td>
+                  <td class="score" data-score="31.1">
+                      <span>31.1</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="165" data-score="30.82" data-place="south-africa">
+                  <td>
+                      165
+                  </td>
+                  <td>
+                    <a href="/place/south-africa/opendns/">South Africa</a>
+                  </td>
+                  <td data-score="9230">
+                      <span>9230</span>
+                  </td>
+                  <td class="score" data-score="30.82">
+                      <span>30.82</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="166" data-score="30.47" data-place="uruguay">
+                  <td>
+                      166
+                  </td>
+                  <td>
+                    <a href="/place/uruguay/opendns/">Uruguay</a>
+                  </td>
+                  <td data-score="9670">
+                      <span>9670</span>
+                  </td>
+                  <td class="score" data-score="30.47">
+                      <span>30.47</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="167" data-score="30.22" data-place="tunisia">
+                  <td>
+                      167
+                  </td>
+                  <td>
+                    <a href="/place/tunisia/opendns/">Tunisia</a>
+                  </td>
+                  <td data-score="9990">
+                      <span>9990</span>
+                  </td>
+                  <td class="score" data-score="30.22">
+                      <span>30.22</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="168" data-score="28.56" data-place="slovakia">
+                  <td>
+                      168
+                  </td>
+                  <td>
+                    <a href="/place/slovakia/opendns/">Slovakia</a>
+                  </td>
+                  <td data-score="12440">
+                      <span>12440</span>
+                  </td>
+                  <td class="score" data-score="28.56">
+                      <span>28.56</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="169" data-score="27.98" data-place="moldova">
+                  <td>
+                      169
+                  </td>
+                  <td>
+                    <a href="/place/moldova/opendns/">Moldova</a>
+                  </td>
+                  <td data-score="13440">
+                      <span>13440</span>
+                  </td>
+                  <td class="score" data-score="27.98">
+                      <span>27.98</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="170" data-score="27.74" data-place="bosnia-and-herzegovina">
+                  <td>
+                      170
+                  </td>
+                  <td>
+                    <a href="/place/bosnia-and-herzegovina/opendns/">Bosnia and Herzegovina</a>
+                  </td>
+                  <td data-score="13870">
+                      <span>13870</span>
+                  </td>
+                  <td class="score" data-score="27.74">
+                      <span>27.74</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="171" data-score="27.29" data-place="sweden">
+                  <td>
+                      171
+                  </td>
+                  <td>
+                    <a href="/place/sweden/opendns/">Sweden</a>
+                  </td>
+                  <td data-score="14710">
+                      <span>14710</span>
+                  </td>
+                  <td class="score" data-score="27.29">
+                      <span>27.29</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="172" data-score="26.92" data-place="czech-republic">
+                  <td>
+                      172
+                  </td>
+                  <td>
+                    <a href="/place/czech-republic/opendns/">Czech Republic</a>
+                  </td>
+                  <td data-score="15450">
+                      <span>15450</span>
+                  </td>
+                  <td class="score" data-score="26.92">
+                      <span>26.92</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="173" data-score="26.81" data-place="syria">
+                  <td>
+                      173
+                  </td>
+                  <td>
+                    <a href="/place/syria/opendns/">Syria</a>
+                  </td>
+                  <td data-score="15680">
+                      <span>15680</span>
+                  </td>
+                  <td class="score" data-score="26.81">
+                      <span>26.81</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="174" data-score="26.73" data-place="azerbaijan">
+                  <td>
+                      174
+                  </td>
+                  <td>
+                    <a href="/place/azerbaijan/opendns/">Azerbaijan</a>
+                  </td>
+                  <td data-score="15840">
+                      <span>15840</span>
+                  </td>
+                  <td class="score" data-score="26.73">
+                      <span>26.73</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="175" data-score="26.45" data-place="palestine">
+                  <td>
+                      175
+                  </td>
+                  <td>
+                    <a href="/place/palestine/opendns/">Palestine</a>
+                  </td>
+                  <td data-score="16440">
+                      <span>16440</span>
+                  </td>
+                  <td class="score" data-score="26.45">
+                      <span>26.45</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="176" data-score="26.34" data-place="dominican-republic">
+                  <td>
+                      176
+                  </td>
+                  <td>
+                    <a href="/place/dominican-republic/opendns/">Dominican Republic</a>
+                  </td>
+                  <td data-score="16680">
+                      <span>16680</span>
+                  </td>
+                  <td class="score" data-score="26.34">
+                      <span>26.34</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="178" data-score="25.13" data-place="thailand">
+                  <td>
+                      178
+                  </td>
+                  <td>
+                    <a href="/place/thailand/opendns/">Thailand</a>
+                  </td>
+                  <td data-score="19560">
+                      <span>19560</span>
+                  </td>
+                  <td class="score" data-score="25.13">
+                      <span>25.13</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="177" data-score="25.6" data-place="hong-kong">
+                  <td>
+                      177
+                  </td>
+                  <td>
+                    <a href="/place/hong-kong/opendns/">Hong Kong</a>
+                  </td>
+                  <td data-score="18400">
+                      <span>18400</span>
+                  </td>
+                  <td class="score" data-score="25.6">
+                      <span>25.6</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="179" data-score="24.97" data-place="morocco">
+                  <td>
+                      179
+                  </td>
+                  <td>
+                    <a href="/place/morocco/opendns/">Morocco</a>
+                  </td>
+                  <td data-score="19980">
+                      <span>19980</span>
+                  </td>
+                  <td class="score" data-score="24.97">
+                      <span>24.97</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="180" data-score="24.61" data-place="spain">
+                  <td>
+                      180
+                  </td>
+                  <td>
+                    <a href="/place/spain/opendns/">Spain</a>
+                  </td>
+                  <td data-score="20960">
+                      <span>20960</span>
+                  </td>
+                  <td class="score" data-score="24.61">
+                      <span>24.61</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="181" data-score="24.27" data-place="greece">
+                  <td>
+                      181
+                  </td>
+                  <td>
+                    <a href="/place/greece/opendns/">Greece</a>
+                  </td>
+                  <td data-score="21920">
+                      <span>21920</span>
+                  </td>
+                  <td class="score" data-score="24.27">
+                      <span>24.27</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="182" data-score="22.67" data-place="australia">
+                  <td>
+                      182
+                  </td>
+                  <td>
+                    <a href="/place/australia/opendns/">Australia</a>
+                  </td>
+                  <td data-score="27090">
+                      <span>27090</span>
+                  </td>
+                  <td class="score" data-score="22.67">
+                      <span>22.67</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="184" data-score="22.08" data-place="serbia">
+                  <td>
+                      184
+                  </td>
+                  <td>
+                    <a href="/place/serbia/opendns/">Serbia</a>
+                  </td>
+                  <td data-score="29270">
+                      <span>29270</span>
+                  </td>
+                  <td class="score" data-score="22.08">
+                      <span>22.08</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="183" data-score="22.3" data-place="romania">
+                  <td>
+                      183
+                  </td>
+                  <td>
+                    <a href="/place/romania/opendns/">Romania</a>
+                  </td>
+                  <td data-score="28440">
+                      <span>28440</span>
+                  </td>
+                  <td class="score" data-score="22.3">
+                      <span>22.3</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="185" data-score="21.21" data-place="philippines">
+                  <td>
+                      185
+                  </td>
+                  <td>
+                    <a href="/place/philippines/opendns/">Philippines</a>
+                  </td>
+                  <td data-score="32830">
+                      <span>32830</span>
+                  </td>
+                  <td class="score" data-score="21.21">
+                      <span>21.21</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="186" data-score="20.77" data-place="kazakhstan">
+                  <td>
+                      186
+                  </td>
+                  <td>
+                    <a href="/place/kazakhstan/opendns/">Kazakhstan</a>
+                  </td>
+                  <td data-score="34790">
+                      <span>34790</span>
+                  </td>
+                  <td class="score" data-score="20.77">
+                      <span>20.77</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="187" data-score="20.33" data-place="bulgaria">
+                  <td>
+                      187
+                  </td>
+                  <td>
+                    <a href="/place/bulgaria/opendns/">Bulgaria</a>
+                  </td>
+                  <td data-score="36880">
+                      <span>36880</span>
+                  </td>
+                  <td class="score" data-score="20.33">
+                      <span>20.33</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="188" data-score="19.94" data-place="canada">
+                  <td>
+                      188
+                  </td>
+                  <td>
+                    <a href="/place/canada/opendns/">Canada</a>
+                  </td>
+                  <td data-score="38800">
+                      <span>38800</span>
+                  </td>
+                  <td class="score" data-score="19.94">
+                      <span>19.94</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="189" data-score="19.76" data-place="argentina">
+                  <td>
+                      189
+                  </td>
+                  <td>
+                    <a href="/place/argentina/opendns/">Argentina</a>
+                  </td>
+                  <td data-score="39730">
+                      <span>39730</span>
+                  </td>
+                  <td class="score" data-score="19.76">
+                      <span>19.76</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="190" data-score="19.49" data-place="netherlands">
+                  <td>
+                      190
+                  </td>
+                  <td>
+                    <a href="/place/netherlands/opendns/">Netherlands</a>
+                  </td>
+                  <td data-score="41210">
+                      <span>41210</span>
+                  </td>
+                  <td class="score" data-score="19.49">
+                      <span>19.49</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="191" data-score="19.18" data-place="italy">
+                  <td>
+                      191
+                  </td>
+                  <td>
+                    <a href="/place/italy/opendns/">Italy</a>
+                  </td>
+                  <td data-score="42930">
+                      <span>42930</span>
+                  </td>
+                  <td class="score" data-score="19.18">
+                      <span>19.18</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="192" data-score="16.94" data-place="japan">
+                  <td>
+                      192
+                  </td>
+                  <td>
+                    <a href="/place/japan/opendns/">Japan</a>
+                  </td>
+                  <td data-score="57700">
+                      <span>57700</span>
+                  </td>
+                  <td class="score" data-score="16.94">
+                      <span>16.94</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="193" data-score="16.85" data-place="france">
+                  <td>
+                      193
+                  </td>
+                  <td>
+                    <a href="/place/france/opendns/">France</a>
+                  </td>
+                  <td data-score="58400">
+                      <span>58400</span>
+                  </td>
+                  <td class="score" data-score="16.85">
+                      <span>16.85</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="195" data-score="16.53" data-place="united-kingdom">
+                  <td>
+                      195
+                  </td>
+                  <td>
+                    <a href="/place/united-kingdom/opendns/">United Kingdom</a>
+                  </td>
+                  <td data-score="60900">
+                      <span>60900</span>
+                  </td>
+                  <td class="score" data-score="16.53">
+                      <span>16.53</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="194" data-score="16.8" data-place="ukraine">
+                  <td>
+                      194
+                  </td>
+                  <td>
+                    <a href="/place/ukraine/opendns/">Ukraine</a>
+                  </td>
+                  <td data-score="58780">
+                      <span>58780</span>
+                  </td>
+                  <td class="score" data-score="16.8">
+                      <span>16.8</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="196" data-score="15.24" data-place="poland">
+                  <td>
+                      196
+                  </td>
+                  <td>
+                    <a href="/place/poland/opendns/">Poland</a>
+                  </td>
+                  <td data-score="72160">
+                      <span>72160</span>
+                  </td>
+                  <td class="score" data-score="15.24">
+                      <span>15.24</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="198" data-score="15.04" data-place="germany">
+                  <td>
+                      198
+                  </td>
+                  <td>
+                    <a href="/place/germany/opendns/">Germany</a>
+                  </td>
+                  <td data-score="74100">
+                      <span>74100</span>
+                  </td>
+                  <td class="score" data-score="15.04">
+                      <span>15.04</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="197" data-score="15.1" data-place="taiwan">
+                  <td>
+                      197
+                  </td>
+                  <td>
+                    <a href="/place/taiwan/opendns/">Taiwan</a>
+                  </td>
+                  <td data-score="73570">
+                      <span>73570</span>
+                  </td>
+                  <td class="score" data-score="15.1">
+                      <span>15.1</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="199" data-score="14.68" data-place="colombia">
+                  <td>
+                      199
+                  </td>
+                  <td>
+                    <a href="/place/colombia/opendns/">Colombia</a>
+                  </td>
+                  <td data-score="77680">
+                      <span>77680</span>
+                  </td>
+                  <td class="score" data-score="14.68">
+                      <span>14.68</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="200" data-score="13.94" data-place="egypt">
+                  <td>
+                      200
+                  </td>
+                  <td>
+                    <a href="/place/egypt/opendns/">Egypt</a>
+                  </td>
+                  <td data-score="85700">
+                      <span>85700</span>
+                  </td>
+                  <td class="score" data-score="13.94">
+                      <span>13.94</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="201" data-score="13.85" data-place="algeria">
+                  <td>
+                      201
+                  </td>
+                  <td>
+                    <a href="/place/algeria/opendns/">Algeria</a>
+                  </td>
+                  <td data-score="86770">
+                      <span>86770</span>
+                  </td>
+                  <td class="score" data-score="13.85">
+                      <span>13.85</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="202" data-score="13.37" data-place="south-korea">
+                  <td>
+                      202
+                  </td>
+                  <td>
+                    <a href="/place/south-korea/opendns/">South Korea</a>
+                  </td>
+                  <td data-score="92350">
+                      <span>92350</span>
+                  </td>
+                  <td class="score" data-score="13.37">
+                      <span>13.37</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="203" data-score="13.34" data-place="malaysia">
+                  <td>
+                      203
+                  </td>
+                  <td>
+                    <a href="/place/malaysia/opendns/">Malaysia</a>
+                  </td>
+                  <td data-score="92740">
+                      <span>92740</span>
+                  </td>
+                  <td class="score" data-score="13.34">
+                      <span>13.34</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="204" data-score="12.24" data-place="vietnam">
+                  <td>
+                      204
+                  </td>
+                  <td>
+                    <a href="/place/vietnam/opendns/">Viet Nam</a>
+                  </td>
+                  <td data-score="107250">
+                      <span>107250</span>
+                  </td>
+                  <td class="score" data-score="12.24">
+                      <span>12.24</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="205" data-score="11.89" data-place="brazil">
+                  <td>
+                      205
+                  </td>
+                  <td>
+                    <a href="/place/brazil/opendns/">Brazil</a>
+                  </td>
+                  <td data-score="112260">
+                      <span>112260</span>
+                  </td>
+                  <td class="score" data-score="11.89">
+                      <span>11.89</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="206" data-score="11.66" data-place="russia">
+                  <td>
+                      206
+                  </td>
+                  <td>
+                    <a href="/place/russia/opendns/">Russian Federation</a>
+                  </td>
+                  <td data-score="115720">
+                      <span>115720</span>
+                  </td>
+                  <td class="score" data-score="11.66">
+                      <span>11.66</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="207" data-score="10.96" data-place="mexico">
+                  <td>
+                      207
+                  </td>
+                  <td>
+                    <a href="/place/mexico/opendns/">Mexico</a>
+                  </td>
+                  <td data-score="127000">
+                      <span>127000</span>
+                  </td>
+                  <td class="score" data-score="10.96">
+                      <span>10.96</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="208" data-score="10.59" data-place="indonesia">
+                  <td>
+                      208
+                  </td>
+                  <td>
+                    <a href="/place/indonesia/opendns/">Indonesia</a>
+                  </td>
+                  <td data-score="133410">
+                      <span>133410</span>
+                  </td>
+                  <td class="score" data-score="10.59">
+                      <span>10.59</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="209" data-score="9.5" data-place="turkey">
+                  <td>
+                      209
+                  </td>
+                  <td>
+                    <a href="/place/turkey/opendns/">Turkey</a>
+                  </td>
+                  <td data-score="154080">
+                      <span>154080</span>
+                  </td>
+                  <td class="score" data-score="9.5">
+                      <span>9.5</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="210" data-score="6.43" data-place="iran">
+                  <td>
+                      210
+                  </td>
+                  <td>
+                    <a href="/place/iran/opendns/">Iran</a>
+                  </td>
+                  <td data-score="230860">
+                      <span>230860</span>
+                  </td>
+                  <td class="score" data-score="6.43">
+                      <span>6.43</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="211" data-score="4.65" data-place="india">
+                  <td>
+                      211
+                  </td>
+                  <td>
+                    <a href="/place/india/opendns/">India</a>
+                  </td>
+                  <td data-score="292090">
+                      <span>292090</span>
+                  </td>
+                  <td class="score" data-score="4.65">
+                      <span>4.65</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="212" data-score="3.14" data-place="china">
+                  <td>
+                      212
+                  </td>
+                  <td>
+                    <a href="/place/china/opendns/">China</a>
+                  </td>
+                  <td data-score="356350">
+                      <span>356350</span>
+                  </td>
+                  <td class="score" data-score="3.14">
+                      <span>3.14</span>
+                  </td>
+              </tr>
+
+
+
+
+
+
+              <tr data-rank="213" data-score="0.0" data-place="united-states">
+                  <td>
+                      213
+                  </td>
+                  <td>
+                    <a href="/place/united-states/opendns/">United States</a>
+                  </td>
+                  <td data-score="539540">
+                      <span>539540</span>
+                  </td>
+                  <td class="score" data-score="0.0">
+                      <span>0.0</span>
+                  </td>
+              </tr>
+
+
+        </tbody>
+    </table>
+</div>
+
+</section>
+
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="container">
+    </div>
+</footer>
+<script data-main="/static/scripts/site" src="/static/scripts/require.js"></script>
+</body>
+</html>
