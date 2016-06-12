@@ -2785,7 +2785,7 @@ textarea {
 @media (max-width: 568px) {
   .cgr-vis.cgr-vis-choropleth .cgr-vis-meta .cgr-vis-tools {
     font-size: 12px;
-    width: 150px;
+    width: 155px;
   }
 }
 .cgr-vis.cgr-vis-choropleth .cgr-vis-meta .cgr-vis-share-embed {
