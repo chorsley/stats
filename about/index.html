@@ -13,7 +13,7 @@
     <meta property="og:description"
           content=""/>
     <meta property="og:image" content="/static/images/favicon.ico"/>
-    <title>About the scores | Global CyberGreen Statistics by CyberGreen</title>
+    <title>About | Global CyberGreen Statistics by CyberGreen</title>
     <!--[if lt IE 9]>
     <script src="/static/vendor/html5shiv.min.js"></script>
     <![endif]-->
@@ -83,30 +83,28 @@
   <li class="active">About the scores</li>
                 </ol>
                 <header class="page-header">
-                    <h1>About the scores</h1>
+                    <h1>About</h1>
                 </header>
 
-<p>In our tables, a scoring system is used to illustrate a country’s performance. The score is a value between 0 and 100, where a lower score means a worse performance; that is, a greater number of affected devices and a higher level of risk or infection.</p>
+<p>In our tables, a scoring system is used to illustrate a country’s performance. The score is a value between 0 and 100, where a higher score means a worse performance; that is, a greater number of affected devices and a higher level of risk or infection.</p>
 <h2>Summary:</h2>
 <ul>
-<li>Higher scores mean better performance</li>
-<li>0 is worst. Strictly, it will be worst performance on that risk by a country or ASN (As there is no theoretical maximum on number of affected devices, there is no “ultimate” worst value, so we set 0 to be worst performer for now – in future this may be set to some reference point)</li>
-<li>100 is best. This means 0 affected devices which is best possible outcome</li>
-<li>Score is order preserving: if one place performs worse on counts (has more affected devices), it will perform worse on the score (have a lower score).</li>
+<li>Higher scores mean worse performane</li>
+<li>100.0 is worst. Strictly, it will be worst performance on that risk by a country or ASN. As there is no theoretical maximum on number of affected devices, there is no “ultimate” worst value, so we set 100 to be worst performer – in future, this may change to be be set to some reference point.</li>
+<li>0 is best. This means 0 affected devices which is the best possible outcome.</li>
+<li>Score is order preserving: if one place performs worse on counts (has more affected devices), it will perform worse on the score (have a higher score).</li>
 </ul>
 <h2>Why scores (vs raw numbers of affected devices)</h2>
 <p>The reason for this scoring system versus just using the raw number of affected devices is that:</p>
 <ul>
-<li>Higher scores are better which is easy to understand. For numbers of affected machines it is the opposite, which can be confusing.</li>
-<li>“Normalized” to be between 0-100 provides ease of understanding and comparability</li>
+<li>Scores are "normalized" to be between 0-100 which assists in ease of understanding and comparability</li>
 <li>Having a clear range makes it easy to see a country’s relative performance. For example, knowing one country has 50 affected machines would not mean much - if some countries have 1m, then that would be very good, whereas if no country has more than 100 it would seem just OK. A clear range obviates the need for this context.</li>
 </ul>
 <h2>Calculating the score</h2>
 <p>The score is defined as follows:</p>
-<p>Score for a country (on a given risk) = 100 x [ ln(max devices) - ln(devices) ] / ln(max devices)</p>
+<p>Score for a country (on a given risk) = 100 x ln(devices) / ln(max devices)</p>
 <ul>
 <li>We take a logarithm of the numbers of affected devices. We do this because the distribution of these numbers is very broad, with a lot of small values and some very large ones. If you do simple division you “bunch” up low numbers to very high scores (lots of places are near 100). Logging helps to “spread” scores out.</li>
-<li>Invert scores: subtract the score from the max number of devices: ln(max devices) - ln(devices)</li>
 <li>Get the score between 0 and 1 by dividing by ln(max devices)</li>
 <li>Multiply by a 100 to get a score within the range 0-100</li>
 </ul>
