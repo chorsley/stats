@@ -1,6 +1,6 @@
 CyberGreen stats site prototype.
 
-Build it and view it:
+## Building the site locally
 
 Clone the repo
 
@@ -12,11 +12,13 @@ pip install -r requirements.txt
 
 Build the site in pelican:
 
-From the base directory:
-
 ```
 pelican -s config_default.py content
+```
 
+Then run the web server:
+
+```
 cd output
 python -m pelican.server
 ```
