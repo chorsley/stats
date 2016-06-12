@@ -1,7 +1,7 @@
 define(['jquery', 'bootstrap', 'chroma', 'tablesorter', 'stickykit'], function($, bootstrap, chroma, tablesorter, stickykit) {
 
     var placeCount = placeCount || 260,
-        colorSteps = ['#ff0000', '#edcf3b', '#7ab800'],
+        colorSteps = ['#7ab800', '#edcf3b', '#ff0000'],
         colorScale = chroma.scale(colorSteps).domain([0, 100]),
         naString = 'n/a',
         $dataTable = $('.data-table'),
@@ -26,7 +26,7 @@ define(['jquery', 'bootstrap', 'chroma', 'tablesorter', 'stickykit'], function($
             }
         },
         tablesorterSliceOptions = {
-            sortList: [[0,1], [1,0]],
+            sortList: [[0,0], [1,0]],
             headers: {
                 2: {sorter: false},
                 3: {sorter: false},

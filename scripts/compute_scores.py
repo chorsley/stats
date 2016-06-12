@@ -51,8 +51,8 @@ def compute_scores():
 
     for entry in entries:
         risk = risklookup[entry['risk']]
-        riskmax = math.log(float(risk['max']))
-        score = (riskmax - math.log(entry['count'])) / riskmax
+        riskmax = float(risk['max'])
+        score = math.log(float(entry['count'])) / math.log(riskmax)
         entry['score'] = round(100 * score, 2)
 
     for risk in risks:
@@ -96,8 +96,8 @@ def add_ranks(ourlist):
         pl['rank'] = rank
         if idx == (len(ourlist) - 1): # last item so can early exit
             continue
-        if  ourlist[idx+1]['score'] < pl['score']:
-            rank = idx + 1
+        if ourlist[idx+1]['score'] < pl['score']:
+            rank = idx + 2
         else: # rank unchanged as a tie
             pass
 
@@ -125,6 +125,19 @@ def test_no_entries_with_same_rank_but_different_scores():
             if len(entrylist) > 1:
                 for entry in entrylist:
                     assert_equals(entry['score'], entrylist[0]['score'])
+
+def test_add_ranks():
+    ourlist = [
+        { 'name': 'a', 'score': 100.0 },
+        { 'name': 'c', 'score': 10.0 },
+        { 'name': 'b', 'score': 50.0 }
+        ]
+    add_ranks(ourlist)
+    assert_equals(ourlist[0]['rank'], 1)
+    assert_equals(ourlist[1]['rank'], 2)
+    assert_equals(ourlist[2]['rank'], 3)
+    assert_equals(ourlist[2]['name'], 'c')
+
 
 if __name__ == '__main__':
     compute_scores()
