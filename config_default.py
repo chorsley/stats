@@ -120,6 +120,7 @@ CGR = {
 
 SITEURL = u'{0}{1}'.format(CGR['scheme'], CGR['domain'])
 SITELOGO = CGR['logo']
+SOURCE_CODE = 'https://github.com/cybergreen-net/stats'
 # If `config_instance` exists, load it for instance-specific configuration.
 # See `config_instance.example` to get started.
 try:
