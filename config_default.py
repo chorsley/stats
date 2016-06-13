@@ -97,7 +97,7 @@ DATASTORE = {
 CGR = {
     'scheme': u'',
     'domain': u'',
-    'logo': u'/static/images/cybergreen-logo-beta.png',
+    'logo': u'/static/images/cybergreen-logo-2.png',
     'logosquare': u'/static/images/cybergreen-logo-square.png',
     'survey': {
     },

@@ -8422,6 +8422,13 @@ textarea {
   height: 100%;
   float: left;
 }
+.logo-beta {
+  color: #39ac73;
+  padding-top: 19px;
+  font-size: 24px;
+  width: 20px;
+  float: left;
+}
 #footer {
   margin-top: 40px;
   background: #edeeec;
