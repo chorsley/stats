@@ -45,18 +45,12 @@
         {% for risk in scope.risks %}
         {% set entry = scope.entries|where('year', page.year)|where('risk', risk.id)|first_or_default(None) %}
 
-          {# previous can be None - be carefull! #}
-          {% do entry.update({
-              'risk': risk,
-              'previous': scope.entries|where('risk', entry.risk)|where('year', (page.year|int - 1)|string)|first_or_default(None)
-          }) %}
-
           <tr data-rank="{{ entry.rank or scope.cgr.na }}" data-score="{{ entry.score or scope.cgr.na }}" data-place="{{ entry.place or scope.cgr.na }}">
               <td class="rank">
                 {% if entry %} {{ entry.rank }} {% else %} {{ scope.cgr.na }} {% endif %}
               </td>
               <td>
-                  <a href="{{ SITEURL }}/place/{{ scope.place.slug }}/{{ entry.risk.id }}/">{{ risk.title }}</a>
+                  <a href="{{ SITEURL }}/place/{{ scope.place.slug }}/{{ risk.id }}/">{{ risk.title }}</a>
               </td>
               <td class="previous-results">
               {% if entry and entry.previous and entry.previous.score %}
