@@ -1,5 +1,5 @@
 type: about
-template: about
+template: page
 title:  About
 slug: about
 
