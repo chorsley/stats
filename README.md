@@ -1,6 +1,7 @@
 CyberGreen stats site prototype.
 
-## Building the site locally
+
+## Installation
 
 Clone the repo
 
@@ -9,6 +10,30 @@ Install requirements
 ```
 pip install -r requirements.txt
 ```
+
+
+## Deploying the site
+
+Populate site with full content (site built will now be about 80s!)
+
+```
+python scripts/process.py
+```
+
+**NOTE: do NOT commit all the generated files to master. Just leave them as they are or you can delete them after you have done the next deployment step.**
+
+Then run the deploy script (this will auto-build the site too):
+
+```
+python scripts/deploy.py
+```
+
+Then follow the instructions to push to github.
+
+
+## Developers
+
+### Building the site locally
 
 Build the site in pelican:
 
@@ -23,15 +48,7 @@ cd output
 python -m pelican.server
 ```
 
-## Populating site content
-
-Populate site with content:
-
-```
-python scripts/process.py
-```
-
-## Data Processing
+### Data preparation
 
 Compute scores (normalized counts) in `entries.csv`:
 
