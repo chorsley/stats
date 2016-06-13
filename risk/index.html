@@ -41,7 +41,8 @@
                     </button>
                     <div class="logo">
                         <a href="/">
-                          <img src="/static/images/cybergreen-logo-beta.png" />
+                          <img src="/static/images/cybergreen-logo-2.png" />
+                          <span>Beta</span>
                         </a>
                     </div>
                 </div>
@@ -88,25 +89,29 @@
                     <h1> Overview of Risks </h1>
                 </header>
 
-<div class="row">
-</div>
-
-<hr />
+  <p>The following table shows four selected risks:</p>
+<ul>
+<li>Open DNS</li>
+<li>Open NTP</li>
+<li>Open SSDP</li>
+<li>Spam (spam sending devices)</li>
+</ul>
+<p>in absolute numbers, as well as an averaged score over all countries.</p>
+<h3>The score</h3>
+<p>In tables and maps on this website, you will see that countries are assigned a score. The score is a value between 0 and 100, where a higher score means a worse performance; that is, a greater number of affected devices and a higher level of risk or infection. You can read more about the <a href="/about#score">score and how it is calculated on the about page</a>.</p>
 
 <div class="table-responsive">
   <table id="datasets_overview_table" class="table data-table table-header-stuck">
     <col style="width:10%">
-    <col style="width:52%">
+    <col style="width:60%">
     <col style="width:20%">
     <col style="width:10%">
-    <col style="width:8%">
     <thead>
       <tr>
         <th>Risk</th>
         <th>Description</th>
         <th>Worst</th>
         <th>Total Devices</th>
-        <th>Score</th>
       </tr>
     </thead>
     <tbody>
@@ -120,11 +125,10 @@
               </a>
             </td>
             <td>
-              <p>NTP is the <a href="https://en.wikipedia.org/wiki/Network_Time_Protocol">Network Time Protocol</a>, a service on the Internet which keeps computers' clocks in sync to a millisecond precision. For historic reasons, there are many open NTP servers on the Internet.</p>
-<p>Since NTP runs over <a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol">UDP</a>, it is also vulnerable to reflective UDP amplification ...</p> <a href="/risk/openntp">Read more</a>
+              <p>Computers and network devices have a perversely strong need to have good agreement about what constitutes the current time (accurate precision time is critical for authentication related purposes, accurate event logging, and a host of other things)</p>
+<p>Most computers stay synchronized using Network Time Protocol (NTP). Oversimplifying greatly, NTP sets the local time by checking the time as ...</p> <a href="/risk/openntp">Read more</a>
             </td>
             <td>
-                <span class="score score-top" data-score="100.0">100.0</span>
                 <a href="/place/united-states/openntp/">United States</a>&nbsp;
               <!--
               <br />
@@ -147,9 +151,6 @@
             <td class="total">
               <span>1574400</span>
             </td>
-            <td class="score" data-score="49">
-              <span>49</span>
-            </td>
           </tr>
 
 
@@ -166,7 +167,6 @@
               <p>The Domain Name System (DNS) is pervasive. Collectively, we use it billions of times a day, often without even knowing that it exists. For enterprises, it's their digital identity as well as a critical component of their security architecture. In short: DNS is pervasive and there are many DNS servers on the Internet. Since DNS runs on the ...</p> <a href="/risk/opendns">Read more</a>
             </td>
             <td>
-                <span class="score score-top" data-score="100.0">100.0</span>
                 <a href="/place/united-states/opendns/">United States</a>&nbsp;
               <!--
               <br />
@@ -192,9 +192,6 @@
             <td class="total">
               <span>3865270</span>
             </td>
-            <td class="score" data-score="51">
-              <span>51</span>
-            </td>
           </tr>
 
 
@@ -211,7 +208,6 @@
               <p>Spam is roughly equivalent to unsolicited telephone marketing calls, except that the user pays for part of the message since everyone shares the cost of maintaining the Internet. Spammers typically send a piece of e-mail to a distribution list in the millions, expecting that only a tiny number of readers will respond to their offer. It has become a major problem for all Internet ...</p> <a href="/risk/spam">Read more</a>
             </td>
             <td>
-                <span class="score score-top" data-score="100.0">100.0</span>
                 <a href="/place/hungary/spam/">Hungary</a>&nbsp;
               <!--
               <br />
@@ -236,9 +232,6 @@
             <td class="total">
               <span>118970</span>
             </td>
-            <td class="score" data-score="46">
-              <span>46</span>
-            </td>
           </tr>
 
 
@@ -257,7 +250,6 @@
 <p>SSDP's amplification factor ...</p> <a href="/risk/openssdp">Read more</a>
             </td>
             <td>
-                <span class="score score-top" data-score="100.0">100.0</span>
                 <a href="/place/china/openssdp/">China</a>&nbsp;
               <!--
               <br />
@@ -276,9 +268,6 @@
             <td class="total">
               <span>12790400</span>
             </td>
-            <td class="score" data-score="51">
-              <span>51</span>
-            </td>
           </tr>
 
 
@@ -294,8 +283,14 @@
     <div class="container">
         <div class="row">
             <div class="footer-main col-md-8">
+                <div class="footer-meta">
+                  <a class="naked" href="https://cybergreen.net/"><img src="/static/images/cybergreen-logo-2.png" alt="" height="28"></a>
+                </div>
                 <div class="footer-attribution">
                     <p>
+                      <br />
+                        Copyright 2016, CyberGreen. All Rights Reserved.
+                        <!--
                         <a href="http://opendefinition.org/ossd/" title="Open Online Software Service">
                             <img src="http://assets.okfn.org/images/ok_buttons/os_80x15_orange_grey.png" alt=""
                                  border=""/>
@@ -313,11 +308,11 @@
                         <a href="http://opendatacommons.org/licenses/pddl/1.0"
                            title="Data License (Public Domain)">Data License (Public
                             Domain)</a>
+                        -->
                     </p>
-                </div>
-                <div class="footer-meta">
-                    <a class="naked" href="https://cybergreen.net/"><img
-                      src="/static/images/cybergreen-logo-beta.png" alt="" height="28"></a>
+                    <p>
+                      <a href="http://atomatic.net/" style="font-size: 12px;">Built by <strong>ATOMATIC</strong> &ndash; experts in data-driven websites</a>
+                    </p>
                 </div>
             </div>
             <div class="footer-links col-md-2">

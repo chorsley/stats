@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="CyberGreen">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="
+">
+    <meta name="keywords" content="
+">
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="CyberGreen Statistics - CyberGreen"/>
     <meta property="og:site_name" content="CyberGreen Statistics"/>
@@ -39,7 +41,8 @@
                     </button>
                     <div class="logo">
                         <a href="/">
-                          <img src="/static/images/cybergreen-logo-beta.png" />
+                          <img src="/static/images/cybergreen-logo-2.png" />
+                          <span>Beta</span>
                         </a>
                     </div>
                 </div>
@@ -80,16 +83,21 @@
                     <li>
                         <a href="/">Home</a>
                     </li>
-  <li class="active">About the scores</li>
+  <li class="active">About</li>
                 </ol>
                 <header class="page-header">
                     <h1>About</h1>
                 </header>
 
+<h1>About this website</h1>
+<p><em><strong>Demo</strong>: This platform is a demo of version 2 of the CyberGreen metrics. As of now, the data and heat map simply illustrate the number (count) of infections and vulnerable devices. Our metrics are currently in development and undergoing review. Cybergreen metrics-based measurement and visualization will be finalized in December 2016.</em></p>
+<p><em><strong>Feedback</strong>: Your feedback is valuable to us. If you have any questions, comments or suggestions about this demo, please <a href="https://www.cybergreen.net/contacti/">let us know</a></em></p>
+<p><a id="score"></a></p>
+<h1>About the score</h1>
 <p>In our tables, a scoring system is used to illustrate a country’s performance. The score is a value between 0 and 100, where a higher score means a worse performance; that is, a greater number of affected devices and a higher level of risk or infection.</p>
 <h2>Summary:</h2>
 <ul>
-<li>Higher scores mean worse performane</li>
+<li>Higher scores mean worse performance</li>
 <li>100.0 is worst. Strictly, it will be worst performance on that risk by a country or ASN. As there is no theoretical maximum on number of affected devices, there is no “ultimate” worst value, so we set 100 to be worst performer – in future, this may change to be be set to some reference point.</li>
 <li>0 is best. This means 0 affected devices which is the best possible outcome.</li>
 <li>Score is order preserving: if one place performs worse on counts (has more affected devices), it will perform worse on the score (have a higher score).</li>
@@ -107,9 +115,7 @@
 <li>We take a logarithm of the numbers of affected devices. We do this because the distribution of these numbers is very broad, with a lot of small values and some very large ones. If you do simple division you “bunch” up low numbers to very high scores (lots of places are near 100). Logging helps to “spread” scores out.</li>
 <li>Get the score between 0 and 1 by dividing by ln(max devices)</li>
 <li>Multiply by a 100 to get a score within the range 0-100</li>
-</ul>
-<div class="diagram">
-    <img src="/static/images/score-diagram.png"/>            </div>
+</ul>            </div>
         </div>
     </div>
 </div>
@@ -117,8 +123,14 @@
     <div class="container">
         <div class="row">
             <div class="footer-main col-md-8">
+                <div class="footer-meta">
+                  <a class="naked" href="https://cybergreen.net/"><img src="/static/images/cybergreen-logo-2.png" alt="" height="28"></a>
+                </div>
                 <div class="footer-attribution">
                     <p>
+                      <br />
+                        Copyright 2016, CyberGreen. All Rights Reserved.
+                        <!--
                         <a href="http://opendefinition.org/ossd/" title="Open Online Software Service">
                             <img src="http://assets.okfn.org/images/ok_buttons/os_80x15_orange_grey.png" alt=""
                                  border=""/>
@@ -136,11 +148,11 @@
                         <a href="http://opendatacommons.org/licenses/pddl/1.0"
                            title="Data License (Public Domain)">Data License (Public
                             Domain)</a>
+                        -->
                     </p>
-                </div>
-                <div class="footer-meta">
-                    <a class="naked" href="https://cybergreen.net/"><img
-                      src="/static/images/cybergreen-logo-beta.png" alt="" height="28"></a>
+                    <p>
+                      <a href="http://atomatic.net/" style="font-size: 12px;">Built by <strong>ATOMATIC</strong> &ndash; experts in data-driven websites</a>
+                    </p>
                 </div>
             </div>
             <div class="footer-links col-md-2">

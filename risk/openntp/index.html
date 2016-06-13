@@ -41,7 +41,8 @@
                     </button>
                     <div class="logo">
                         <a href="/">
-                          <img src="/static/images/cybergreen-logo-beta.png" />
+                          <img src="/static/images/cybergreen-logo-2.png" />
+                          <span>Beta</span>
                         </a>
                     </div>
                 </div>
@@ -94,10 +95,10 @@
             <div class="row navigate">
               <div class="col-md-12">
                 <section class="risk-about">
-                  <p>NTP is the <a href="https://en.wikipedia.org/wiki/Network_Time_Protocol">Network Time Protocol</a>, a service on the Internet which keeps computers' clocks in sync to a millisecond precision. For historic reasons, there are many open NTP servers on the Internet.</p>
-<p>Since NTP runs over <a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol">UDP</a>, it is also vulnerable to reflective UDP amplification attacks.</p>
-<p><strong>Details</strong></p>
-<p><a href="https://blog.cloudflare.com/understanding-and-mitigating-ntp-based-ddos-attacks/">NTP amplification attacks</a> have a considerable amplification factor: up to 550.  An attacker with 1 MBit/sec connections can find 10 open ntp servers, each with a GBit/sec connection and thus create a DDOS attack of 500 GBit/sec.</p>
+                  <p>Computers and network devices have a perversely strong need to have good agreement about what constitutes the current time (accurate precision time is critical for authentication related purposes, accurate event logging, and a host of other things)</p>
+<p>Most computers stay synchronized using Network Time Protocol (NTP). Oversimplifying greatly, NTP sets the local time by checking the time as reported by multiple trusted high-precision network-accessible clocks.</p>
+<p>Just like DNS, NTP is a UDP-based service, and shares the same weaknesses that DNS does (particularly problems with spoofed traffic, traffic amplification, and unnecessarily promiscuous access to servers).</p>
+<p>It is thus hardly surprising that NTP is being abused for DDoS attacks...</p>
                 </section>
                 
                 <h3>Summary stats</h3>
@@ -4384,8 +4385,14 @@
     <div class="container">
         <div class="row">
             <div class="footer-main col-md-8">
+                <div class="footer-meta">
+                  <a class="naked" href="https://cybergreen.net/"><img src="/static/images/cybergreen-logo-2.png" alt="" height="28"></a>
+                </div>
                 <div class="footer-attribution">
                     <p>
+                      <br />
+                        Copyright 2016, CyberGreen. All Rights Reserved.
+                        <!--
                         <a href="http://opendefinition.org/ossd/" title="Open Online Software Service">
                             <img src="http://assets.okfn.org/images/ok_buttons/os_80x15_orange_grey.png" alt=""
                                  border=""/>
@@ -4403,11 +4410,11 @@
                         <a href="http://opendatacommons.org/licenses/pddl/1.0"
                            title="Data License (Public Domain)">Data License (Public
                             Domain)</a>
+                        -->
                     </p>
-                </div>
-                <div class="footer-meta">
-                    <a class="naked" href="https://cybergreen.net/"><img
-                      src="/static/images/cybergreen-logo-beta.png" alt="" height="28"></a>
+                    <p>
+                      <a href="http://atomatic.net/" style="font-size: 12px;">Built by <strong>ATOMATIC</strong> &ndash; experts in data-driven websites</a>
+                    </p>
                 </div>
             </div>
             <div class="footer-links col-md-2">
