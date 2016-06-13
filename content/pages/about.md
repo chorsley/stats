@@ -3,11 +3,20 @@ template: about
 title:  About
 slug: about
 
+#About this website 
+
+_**Demo**: This platform is a demo of version 2 of the CyberGreen metrics. As of now, the data and heat map simply illustrate the number (count) of infections and vulnerable devices. Our metrics are currently in development and undergoing review. Cybergreen metrics-based measurement and visualization will be finalized in December 2016._
+
+_**Feedback**: Your feedback is valuable to us. If you have any questions, comments or suggestions about this demo, please [let us know](https://www.cybergreen.net/contacti/)_
+
+<a id="score"></a>
+#About the score
+
 In our tables, a scoring system is used to illustrate a country’s performance. The score is a value between 0 and 100, where a higher score means a worse performance; that is, a greater number of affected devices and a higher level of risk or infection.
 
 ## Summary:
 
-* Higher scores mean worse performane
+* Higher scores mean worse performance
 * 100.0 is worst. Strictly, it will be worst performance on that risk by a country or ASN. As there is no theoretical maximum on number of affected devices, there is no “ultimate” worst value, so we set 100 to be worst performer – in future, this may change to be be set to some reference point.
 * 0 is best. This means 0 affected devices which is the best possible outcome.
 * Score is order preserving: if one place performs worse on counts (has more affected devices), it will perform worse on the score (have a higher score).
