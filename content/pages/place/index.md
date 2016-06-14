@@ -4,7 +4,7 @@ title: Place overview
 slug: place
 year: 2016
 
-The following table lists countries by how well they are doing based on four different
+The following table lists countries scored by how well they are doing based on four different
 criteria:
 
   * number of open recursive DNS devices (opendns)
@@ -19,4 +19,4 @@ Countries with two or more "n/a" colums were filtered out.
 
 ### The score
 
-In the tables and maps on this website, you will see that countries are assigned a score. The score is a value between 0 and 100, where a higher score means a worse performance; that is, a greater number of affected devices and a higher level of risk or infection. You can read more about the score and how it is calculated [here](/about#score)
+In the table below the number shown is the score for a country. This score is a value between 0 and 100, where a higher score means a worse performance; that is, a greater number of affected devices and a higher level of risk or infection. You can read more about the [score and how it is calculated here](/about#score).

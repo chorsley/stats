@@ -62,7 +62,7 @@
             </td>
             {% for risk in scope.risks %}
               {% set entry = scope.entries|search('table_places_entries', risk=risk.id, place=place.id, year=page.year)|first_or_default(None) %}
-              <td class="score" data-score="{{ entry['score'] or scope.cgr.na }}">
+              <td class="score" data-score="{{ entry['score'] or scope.cgr.na }}" title="{{entry['count'] or scope.cgr.na }} affected devices">
                  <span>{{ entry['score'] or '' }}</span>
               </td>
             {% endfor %}
