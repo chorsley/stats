@@ -5,7 +5,7 @@ slug: about
 
 #About this website 
 
-_**Demo**: This platform is a demo of version 2 of the CyberGreen metrics. As of now, the data and heat map simply illustrate the number (count) of infections and vulnerable devices. Our metrics are currently in development and undergoing review. Cybergreen metrics-based measurement and visualization will be finalized in December 2016._
+_**Demo**: This platform is primarily intended to be a demo of Version 2 of CyberGreen platform functions. As of now, the site does not provide metrics of cyber health. The data and heat map simply illustrated the number (count) of infections and vulnerable devices, scored then ranked. Cybergreen metrics-based measurement and visualization will be finalized in December 2016._
 
 _**Feedback**: Your feedback is valuable to us. If you have any questions, comments or suggestions about this demo, please [let us know](https://www.cybergreen.net/contacti/)_
 
