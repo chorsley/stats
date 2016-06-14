@@ -38,3 +38,8 @@ Score for a country (on a given risk) = 100 x ln(devices) / ln(max devices)
 * Get the score between 0 and 1 by dividing by ln(max devices)
 * Multiply by a 100 to get a score within the range 0-100
 
+# Data sources and acknowledgements
+
+We would like to thank Jared Mauch and the [openntpproject.org](http://openntpproject.org/) and [openresolver project](http://openresolverproject.org/) who graciously gave us access to his scanning data.
+
+
